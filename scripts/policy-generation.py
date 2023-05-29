@@ -52,7 +52,7 @@ def main(args):
             statement['Resource'] = "*"
 
         for action_name in action_list[risk_type]['Actions']:
-            if action_name.lower in exclude_actions:
+            if action_name.lower in excluded_actions:
                 continue
             if type(action_name) is str:
                 statement['Action'].append(action_name)
