@@ -1,0 +1,30 @@
+on:
+  push:
+    branches: [ main ]
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    name: Publish
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: GenerateFiles
+        run: |
+          curl -s https://raw.githubusercontent.com/iann0036/iam-dataset/main/iam_definition.json -o iam_definition.json
+          ./scripts/annotate-list.py --output-yaml annotated.yaml --output-json annotated.json
+          for t in PrivEsc ResourceExposure CredentialExposure DataAccess ALL ; do
+            ./scripts/policy-generation.py --risk $t --action-file actions.yaml --policy-file policies/$t.json
+          done
+
+      - name: Commit files
+        run: |
+          git config --global user.name 'GitHubAction'
+          git config --global user.email 'jchrisfarris@users.noreply.github.com'
+          git commit -am "Automated file generation"
+          git push
