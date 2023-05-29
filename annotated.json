@@ -1018,14 +1018,6 @@
       "DataAccess"
     ]
   },
-  "config:GetStoredQuery": {
-    "access_level": "Read",
-    "description": "Grants permission to return the details of a specific stored query",
-    "service_name": "AWS Config",
-    "risk_category": [
-      "DataAccess"
-    ]
-  },
   "connect:ListUsers": {
     "access_level": "List",
     "description": "Grants permission to list user resources in an Amazon Connect instance",
@@ -1110,14 +1102,6 @@
     "access_level": "Read",
     "description": "Grants permission to return one or more items and item attributes by accessing every item in a table or a secondary index",
     "service_name": "Amazon DynamoDB",
-    "risk_category": [
-      "DataAccess"
-    ]
-  },
-  "ecr:BatchGetImage": {
-    "access_level": "Read",
-    "description": "Grants permission to get detailed information for specified images within a specified repository",
-    "service_name": "Amazon Elastic Container Registry",
     "risk_category": [
       "DataAccess"
     ]

@@ -897,13 +897,6 @@ DataAccess:
       - DataAccess
       service_name: Amazon Cognito Sync
 
-  - config:GetStoredQuery:
-      access_level: Read
-      description: Grants permission to return the details of a specific stored query
-      risk_category:
-      - DataAccess
-      service_name: AWS Config
-
   - connect:ListUsers:
       access_level: List
       description: Grants permission to list user resources in an Amazon Connect instance
@@ -980,13 +973,6 @@ DataAccess:
       risk_category:
       - DataAccess
       service_name: Amazon DynamoDB
-
-  - ecr:BatchGetImage:
-      access_level: Read
-      description: Grants permission to get detailed information for specified images within a specified repository
-      risk_category:
-      - DataAccess
-      service_name: Amazon Elastic Container Registry
 
   - ecr:GetDownloadUrlForLayer:
       access_level: Read
