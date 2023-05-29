@@ -28,6 +28,10 @@ def main(args):
     else:
         risk_types = [ args.risk ]
 
+    excluded_actions = []
+    if args.exclude_actions:
+        excluded_actions = [x.lower() for x in args.exclude_actions]
+
     for risk_type in risk_types:
         if risk_type == 'ALL':
             continue
@@ -48,6 +52,8 @@ def main(args):
             statement['Resource'] = "*"
 
         for action_name in action_list[risk_type]['Actions']:
+            if action_name.lower in exclude_actions:
+                continue
             if type(action_name) is str:
                 statement['Action'].append(action_name)
             else:

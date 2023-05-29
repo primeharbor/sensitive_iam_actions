@@ -128,7 +128,6 @@ DataAccess:
   - cognito-idp:ListGroups
   - cognito-sync:ListRecords
   - cognito-sync:QueryRecords
-  - config:GetStoredQuery
   - connect:ListUsers
   - datapipeline:QueryObjects
   - dax:BatchGetItem
@@ -140,7 +139,6 @@ DataAccess:
   - dynamodb:GetRecords
   - dynamodb:Query
   - dynamodb:Scan
-  - ecr:BatchGetImage
   - ecr:GetDownloadUrlForLayer
   - es:ESHttpDelete
   - es:ESHttpGet
