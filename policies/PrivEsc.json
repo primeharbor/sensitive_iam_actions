@@ -1,0 +1,33 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "DenyPrivEsc",
+      "Effect": "Deny",
+      "Action": [
+        "codestar:AssociateTeamMember",
+        "codestar:CreateProject",
+        "glue:UpdateDevEndpoint",
+        "iam:AddUserToGroup",
+        "iam:AttachGroupPolicy",
+        "iam:AttachRolePolicy",
+        "iam:AttachUserPolicy",
+        "iam:CreateAccessKey",
+        "iam:CreateLoginProfile",
+        "iam:CreatePolicyVersion",
+        "iam:CreateServiceLinkedRole",
+        "iam:CreateVirtualMFADevice",
+        "iam:EnableMFADevice",
+        "iam:PassRole",
+        "iam:PutGroupPolicy",
+        "iam:PutRolePolicy",
+        "iam:PutUserPolicy",
+        "iam:ResyncMFADevice",
+        "iam:SetDefaultPolicyVersion",
+        "iam:UpdateAssumeRolePolicy",
+        "iam:UpdateLoginProfile"
+      ],
+      "Resource": "*"
+    }
+  ]
+}

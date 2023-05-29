@@ -1,0 +1,3879 @@
+{
+  "appsync:ListApiKeys": {
+    "access_level": "List",
+    "description": "Grants permission to list the API keys for a given API",
+    "service_name": "AWS AppSync",
+    "risk_category": [
+      "CredentialExposure"
+    ]
+  },
+  "athena:GetSession": {
+    "access_level": "Read",
+    "description": "Grants permission to get a session",
+    "service_name": "Amazon Athena",
+    "risk_category": [
+      "CredentialExposure"
+    ]
+  },
+  "chatbot:GetMicrosoftTeamsOauthParameters": {
+    "access_level": "Read",
+    "description": "Grants permission to generate OAuth parameters to request Microsoft Teams OAuth code to be used by the AWS Chatbot service",
+    "service_name": "AWS Chatbot",
+    "risk_category": [
+      "CredentialExposure"
+    ]
+  },
+  "chatbot:GetSlackOauthParameters": {
+    "access_level": "Read",
+    "description": "Grants permission to generate OAuth parameters to request Slack OAuth code to be used by the AWS Chatbot service",
+    "service_name": "AWS Chatbot",
+    "risk_category": [
+      "CredentialExposure"
+    ]
+  },
+  "chime:CreateApiKey": {
+    "access_level": "Write",
+    "description": "Grants permission to create a new SCIM access key for your Amazon Chime account and Okta configuration",
+    "service_name": "Amazon Chime",
+    "risk_category": [
+      "CredentialExposure"
+    ]
+  },
+  "cloud9:CreateEnvironmentSSH": {
+    "access_level": "Write",
+    "description": "Grants permission to create an AWS Cloud9 SSH development environment",
+    "service_name": "AWS Cloud9",
+    "risk_category": [
+      "CredentialExposure"
+    ]
+  },
+  "cloud9:CreateEnvironmentToken": {
+    "access_level": "Read",
+    "description": "Grants permission to create an authentication token that allows a connection between the AWS Cloud9 IDE and the user's environment",
+    "service_name": "AWS Cloud9",
+    "risk_category": [
+      "CredentialExposure"
+    ]
+  },
+  "codeartifact:GetAuthorizationToken": {
+    "access_level": "Read",
+    "description": "Grants permission to generate a temporary authentication token for accessing repositories in a domain",
+    "service_name": "AWS CodeArtifact",
+    "risk_category": [
+      "CredentialExposure"
+    ]
+  },
+  "codepipeline:PollForJobs": {
+    "access_level": "Write",
+    "description": "Grants permission to view information about any jobs for CodePipeline to act on",
+    "service_name": "AWS CodePipeline",
+    "risk_category": [
+      "CredentialExposure"
+    ]
+  },
+  "cognito-identity:GetCredentialsForIdentity": {
+    "access_level": "Read",
+    "description": "Grants permission to return credentials for the provided identity ID",
+    "service_name": "Amazon Cognito Identity",
+    "risk_category": [
+      "CredentialExposure"
+    ]
+  },
+  "cognito-identity:GetOpenIdToken": {
+    "access_level": "Read",
+    "description": "Grants permission to get an OpenID token, using a known Cognito ID",
+    "service_name": "Amazon Cognito Identity",
+    "risk_category": [
+      "CredentialExposure"
+    ]
+  },
+  "cognito-identity:GetOpenIdTokenForDeveloperIdentity": {
+    "access_level": "Read",
+    "description": "Grants permission to register (or retrieve) a Cognito IdentityId and an OpenID Connect token for a user authenticated by your backend authentication process",
+    "service_name": "Amazon Cognito Identity",
+    "risk_category": [
+      "CredentialExposure"
+    ]
+  },
+  "cognito-idp:DescribeUserPoolClient": {
+    "access_level": "Read",
+    "description": "Grants permission to describe any user pool app client",
+    "service_name": "Amazon Cognito User Pools",
+    "risk_category": [
+      "CredentialExposure"
+    ]
+  },
+  "cognito-idp:GetUserAttributeVerificationCode": {
+    "access_level": "Read",
+    "description": "Gets the user attribute verification code for the specified attribute name",
+    "service_name": "Amazon Cognito User Pools",
+    "risk_category": [
+      "CredentialExposure"
+    ]
+  },
+  "connect:GetFederationToken": {
+    "access_level": "Read",
+    "description": "Grants permission to federate into an Amazon Connect instance when using SAML-based authentication for identity management",
+    "service_name": "Amazon Connect",
+    "risk_category": [
+      "CredentialExposure"
+    ]
+  },
+  "connect:ListSecurityKeys": {
+    "access_level": "List",
+    "description": "Grants permission to view the security keys of an existing Amazon Connect instance",
+    "service_name": "Amazon Connect",
+    "risk_category": [
+      "CredentialExposure"
+    ]
+  },
+  "ec2:GetPasswordData": {
+    "access_level": "Read",
+    "description": "Grants permission to retrieve the encrypted administrator password for a running Windows instance",
+    "service_name": "Amazon EC2",
+    "risk_category": [
+      "CredentialExposure"
+    ]
+  },
+  "ecr-public:GetAuthorizationToken": {
+    "access_level": "Read",
+    "description": "Grants permission to retrieve a token that is valid for a specified registry for 12 hours",
+    "service_name": "Amazon Elastic Container Registry Public",
+    "risk_category": [
+      "CredentialExposure"
+    ]
+  },
+  "ecr:GetAuthorizationToken": {
+    "access_level": "Read",
+    "description": "Grants permission to retrieve a token that is valid for a specified registry for 12 hours",
+    "service_name": "Amazon Elastic Container Registry",
+    "risk_category": [
+      "CredentialExposure"
+    ]
+  },
+  "gamelift:GetComputeAuthToken": {
+    "access_level": "Read",
+    "description": "Grants permission to retrieve an authorization token for a compute and fleet to use in game server processes",
+    "service_name": "Amazon GameLift",
+    "risk_category": [
+      "CredentialExposure"
+    ]
+  },
+  "gamelift:GetGameSessionLogUrl": {
+    "access_level": "Read",
+    "description": "Grants permission to retrieve the location of stored logs for a game session",
+    "service_name": "Amazon GameLift",
+    "risk_category": [
+      "CredentialExposure"
+    ]
+  },
+  "gamelift:GetInstanceAccess": {
+    "access_level": "Read",
+    "description": "Grants permission to request remote access to a specified fleet instance",
+    "service_name": "Amazon GameLift",
+    "risk_category": [
+      "CredentialExposure",
+      "DataAccess"
+    ]
+  },
+  "gamelift:RequestUploadCredentials": {
+    "access_level": "Read",
+    "description": "Grants permission to retrieve fresh upload credentials to use when uploading a new game build",
+    "service_name": "Amazon GameLift",
+    "risk_category": [
+      "CredentialExposure"
+    ]
+  },
+  "iam:CreateAccessKey": {
+    "access_level": "Write",
+    "description": "Grants permission to create access key and secret access key for the specified IAM user",
+    "service_name": "AWS Identity and Access Management",
+    "risk_category": [
+      "CredentialExposure",
+      "PrivEsc",
+      "ResourceExposure"
+    ]
+  },
+  "iam:CreateLoginProfile": {
+    "access_level": "Write",
+    "description": "Grants permission to create a password for the specified IAM user",
+    "service_name": "AWS Identity and Access Management",
+    "risk_category": [
+      "CredentialExposure",
+      "PrivEsc",
+      "ResourceExposure"
+    ]
+  },
+  "iam:CreateServiceSpecificCredential": {
+    "access_level": "Write",
+    "description": "Grants permission to create a new service-specific credential for an IAM user",
+    "service_name": "AWS Identity and Access Management",
+    "risk_category": [
+      "CredentialExposure",
+      "ResourceExposure"
+    ]
+  },
+  "iam:ResetServiceSpecificCredential": {
+    "access_level": "Write",
+    "description": "Grants permission to reset the password for an existing service-specific credential for an IAM user",
+    "service_name": "AWS Identity and Access Management",
+    "risk_category": [
+      "CredentialExposure",
+      "ResourceExposure"
+    ]
+  },
+  "iam:UpdateAccessKey": {
+    "access_level": "Write",
+    "description": "Grants permission to update the status of the specified access key as Active or Inactive",
+    "service_name": "AWS Identity and Access Management",
+    "risk_category": [
+      "CredentialExposure",
+      "ResourceExposure"
+    ]
+  },
+  "lightsail:DownloadDefaultKeyPair": {
+    "access_level": "Write",
+    "description": "Grants permission to download the default key pair used to authenticate and connect to instances in a specific AWS Region",
+    "service_name": "Amazon Lightsail",
+    "risk_category": [
+      "CredentialExposure"
+    ]
+  },
+  "lightsail:GetBucketAccessKeys": {
+    "access_level": "Read",
+    "description": "Grants permission to get the existing access key IDs for the specified Amazon Lightsail bucket",
+    "service_name": "Amazon Lightsail",
+    "risk_category": [
+      "CredentialExposure"
+    ]
+  },
+  "lightsail:GetKeyPair": {
+    "access_level": "Read",
+    "description": "Grants permission to get information about a key pair",
+    "service_name": "Amazon Lightsail",
+    "risk_category": [
+      "CredentialExposure"
+    ]
+  },
+  "lightsail:GetKeyPairs": {
+    "access_level": "Read",
+    "description": "Grants permission to get information about all key pairs",
+    "service_name": "Amazon Lightsail",
+    "risk_category": [
+      "CredentialExposure"
+    ]
+  },
+  "lightsail:GetRelationalDatabaseMasterUserPassword": {
+    "access_level": "Write",
+    "description": "Grants permission to get the master user password of a relational database",
+    "service_name": "Amazon Lightsail",
+    "risk_category": [
+      "CredentialExposure",
+      "ResourceExposure"
+    ]
+  },
+  "mediapackage:RotateChannelCredentials": {
+    "access_level": "Write",
+    "description": "Grants permission to rotate credentials for the first IngestEndpoint of a Channel in AWS Elemental MediaPackage",
+    "service_name": "AWS Elemental MediaPackage",
+    "risk_category": [
+      "CredentialExposure"
+    ]
+  },
+  "mediapackage:RotateIngestEndpointCredentials": {
+    "access_level": "Write",
+    "description": "Grants permission to rotate IngestEndpoint credentials for a Channel in AWS Elemental MediaPackage",
+    "service_name": "AWS Elemental MediaPackage",
+    "risk_category": [
+      "CredentialExposure",
+      "ResourceExposure"
+    ]
+  },
+  "rds-db:connect": {
+    "access_level": "Permissions management",
+    "description": "Allows IAM role or user to connect to RDS database",
+    "service_name": "Amazon RDS IAM Authentication",
+    "risk_category": [
+      "CredentialExposure",
+      "ResourceExposure"
+    ]
+  },
+  "redshift:GetClusterCredentials": {
+    "access_level": "Write",
+    "description": "Grants permission to get temporary credentials to access an Amazon Redshift database by the specified AWS account",
+    "service_name": "Amazon Redshift",
+    "risk_category": [
+      "CredentialExposure"
+    ]
+  },
+  "snowball:GetJobUnlockCode": {
+    "access_level": "Read",
+    "description": "Grants permission to get the UnlockCode code value for the specified job",
+    "service_name": "AWS Snowball",
+    "risk_category": [
+      "CredentialExposure"
+    ]
+  },
+  "sso-directory:ListBearerTokens": {
+    "access_level": "Read",
+    "description": "Grants permission to list bearer tokens for a given provisioning tenant",
+    "service_name": "AWS IAM Identity Center (successor to AWS Single Sign-On) directory",
+    "risk_category": [
+      "CredentialExposure"
+    ]
+  },
+  "storagegateway:DescribeChapCredentials": {
+    "access_level": "Read",
+    "description": "Grants permission to get an array of Challenge-Handshake Authentication Protocol (CHAP) credentials information for a specified iSCSI target, one for each target-initiator pair",
+    "service_name": "AWS Storage Gateway",
+    "risk_category": [
+      "CredentialExposure"
+    ]
+  },
+  "sts:AssumeRole": {
+    "access_level": "Write",
+    "description": "Grants permission to obtain a set of temporary security credentials that you can use to access AWS resources that you might not normally have access to",
+    "service_name": "AWS Security Token Service",
+    "risk_category": [
+      "CredentialExposure"
+    ]
+  },
+  "sts:AssumeRoleWithSAML": {
+    "access_level": "Write",
+    "description": "Grants permission to obtain a set of temporary security credentials for users who have been authenticated via a SAML authentication response",
+    "service_name": "AWS Security Token Service",
+    "risk_category": [
+      "CredentialExposure"
+    ]
+  },
+  "sts:AssumeRoleWithWebIdentity": {
+    "access_level": "Write",
+    "description": "Grants permission to obtain a set of temporary security credentials for users who have been authenticated in a mobile or web application with a web identity provider",
+    "service_name": "AWS Security Token Service",
+    "risk_category": [
+      "CredentialExposure"
+    ]
+  },
+  "sts:GetFederationToken": {
+    "access_level": "Read",
+    "description": "Grants permission to obtain a set of temporary security credentials (consisting of an access key ID, a secret access key, and a security token) for a federated user",
+    "service_name": "AWS Security Token Service",
+    "risk_category": [
+      "CredentialExposure"
+    ]
+  },
+  "sts:GetSessionToken": {
+    "access_level": "Read",
+    "description": "Grants permission to obtain a set of temporary security credentials (consisting of an access key ID, a secret access key, and a security token) for an AWS account or IAM user",
+    "service_name": "AWS Security Token Service",
+    "risk_category": [
+      "CredentialExposure"
+    ]
+  },
+  "waf-regional:GetChangeToken": {
+    "access_level": "Read",
+    "description": "Grants permission to retrieve a change token to use in create, update, and delete requests",
+    "service_name": "AWS WAF Regional",
+    "risk_category": [
+      "CredentialExposure"
+    ]
+  },
+  "waf:GetChangeToken": {
+    "access_level": "Read",
+    "description": "Grants permission to retrieve a change token to use in create, update, and delete requests",
+    "service_name": "AWS WAF",
+    "risk_category": [
+      "CredentialExposure"
+    ]
+  },
+  "appsync:GetDataSource": {
+    "access_level": "Read",
+    "description": "Grants permission to retrieve a data source",
+    "service_name": "AWS AppSync",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "appsync:GetFunction": {
+    "access_level": "Read",
+    "description": "Grants permission to retrieve a function",
+    "service_name": "AWS AppSync",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "athena:GetQueryExecution": {
+    "access_level": "Read",
+    "description": "Grants permission to get information about the specified query execution",
+    "service_name": "Amazon Athena",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "athena:GetQueryResults": {
+    "access_level": "Read",
+    "description": "Grants permission to get the query results",
+    "service_name": "Amazon Athena",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "athena:GetQueryResultsStream": {
+    "access_level": "Read",
+    "description": "Grants permission to get the query results stream",
+    "service_name": "Amazon Athena",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "cassandra:Select": {
+    "access_level": "Read",
+    "description": "Grants permission to SELECT data from a table",
+    "service_name": "Amazon Keyspaces (for Apache Cassandra)",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "chatbot:DescribeSlackChannels": {
+    "access_level": "Read",
+    "description": "Grants permission to list all public Slack channels in the Slack workspace connected to the AWS Account onboarded with AWS Chatbot service",
+    "service_name": "AWS Chatbot",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "chatbot:DescribeSlackUserIdentities": {
+    "access_level": "Read",
+    "description": "Grants permission to describe AWS Chatbot Slack User Identities",
+    "service_name": "AWS Chatbot",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "chatbot:ListMicrosoftTeamsConfiguredTeams": {
+    "access_level": "Read",
+    "description": "Grants permission to list all Microsoft Teams connected to the AWS Account onboarded with AWS Chatbot service",
+    "service_name": "AWS Chatbot",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "chatbot:ListMicrosoftTeamsUserIdentities": {
+    "access_level": "Read",
+    "description": "Grants permission to describe AWS Chatbot Microsoft Teams User Identities",
+    "service_name": "AWS Chatbot",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "chime:GetAttendee": {
+    "access_level": "Read",
+    "description": "Grants permission to get attendee details for a specified meeting ID and attendee ID",
+    "service_name": "Amazon Chime",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "chime:GetChannelMessage": {
+    "access_level": "Read",
+    "description": "Grants permission to get the full details of a channel message",
+    "service_name": "Amazon Chime",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "chime:GetMeeting": {
+    "access_level": "Read",
+    "description": "Grants permission to get the meeting record for a specified meeting ID",
+    "service_name": "Amazon Chime",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "chime:GetMeetingDetail": {
+    "access_level": "Read",
+    "description": "Grants permission to get attendee, connection, and other details for a meeting",
+    "service_name": "Amazon Chime",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "chime:GetRoom": {
+    "access_level": "Read",
+    "description": "Grants permission to retrieve a room",
+    "service_name": "Amazon Chime",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "chime:GetUser": {
+    "access_level": "Read",
+    "description": "Grants permission to get details for the specified user ID",
+    "service_name": "Amazon Chime",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "chime:GetUserActivityReportData": {
+    "access_level": "Read",
+    "description": "Grants permission to get a summary of user activity on the user details page",
+    "service_name": "Amazon Chime",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "chime:GetUserByEmail": {
+    "access_level": "Read",
+    "description": "Grants permission to get user details for an Amazon Chime user based on the email address in an Amazon Chime Enterprise or Team account",
+    "service_name": "Amazon Chime",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "chime:GetUserSettings": {
+    "access_level": "Read",
+    "description": "Grants permission to get user settings related to the specified Amazon Chime user",
+    "service_name": "Amazon Chime",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "chime:ListAttendees": {
+    "access_level": "List",
+    "description": "Grants permission to list up to 100 attendees for a specified Amazon Chime SDK meeting",
+    "service_name": "Amazon Chime",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "chime:ListMeetingEvents": {
+    "access_level": "List",
+    "description": "Grants permission to list all events that occurred for a specified meeting",
+    "service_name": "Amazon Chime",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "chime:ListMeetings": {
+    "access_level": "List",
+    "description": "Grants permission to list up to 100 active Amazon Chime SDK meetings",
+    "service_name": "Amazon Chime",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "chime:ListUsers": {
+    "access_level": "List",
+    "description": "Grants permission to list the users that belong to the specified Amazon Chime account",
+    "service_name": "Amazon Chime",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "cleanrooms:GetProtectedQuery": {
+    "access_level": "Read",
+    "description": "Grants permission to view a protected query",
+    "service_name": "AWS Clean Rooms",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "cloudformation:GetTemplate": {
+    "access_level": "Read",
+    "description": "Grants permission to return the template body for a specified stack",
+    "service_name": "AWS CloudFormation & Cloud Control API",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "cloudfront:GetFunction": {
+    "access_level": "Read",
+    "description": "Grants permission to get a CloudFront function's code",
+    "service_name": "Amazon CloudFront",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "cloudtrail:GetQueryResults": {
+    "access_level": "Read",
+    "description": "Grants permission to fetch results of a complete query",
+    "service_name": "AWS CloudTrail",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "cloudtrail:LookupEvents": {
+    "access_level": "Read",
+    "description": "Grants permission to look up API activity events captured by CloudTrail that create, update, or delete resources in your account",
+    "service_name": "AWS CloudTrail",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "codeartifact:GetPackageVersionAsset": {
+    "access_level": "Read",
+    "description": "Grants permission to return an asset (or file) that is part of a package version",
+    "service_name": "AWS CodeArtifact",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "codeartifact:GetPackageVersionReadme": {
+    "access_level": "Read",
+    "description": "Grants permission to return a package version's readme file",
+    "service_name": "AWS CodeArtifact",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "codeartifact:ReadFromRepository": {
+    "access_level": "Read",
+    "description": "Grants permission to return package assets and metadata from a repository endpoint",
+    "service_name": "AWS CodeArtifact",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "codebuild:BatchGetReportGroups": {
+    "access_level": "Read",
+    "description": "Grants permission to return an array of ReportGroup objects that are specified by the input reportGroupArns parameter",
+    "service_name": "AWS CodeBuild",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "codebuild:BatchGetReports": {
+    "access_level": "Read",
+    "description": "Grants permission to return an array of the Report objects specified by the input reportArns parameter",
+    "service_name": "AWS CodeBuild",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "codecommit:BatchGetCommits": {
+    "access_level": "Read",
+    "description": "Grants permission to get return information about one or more commits in an AWS CodeCommit repository",
+    "service_name": "AWS CodeCommit",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "codecommit:BatchGetPullRequests": {
+    "access_level": "Read",
+    "description": "Grants permission to return information about one or more pull requests in an AWS CodeCommit repository",
+    "service_name": "AWS CodeCommit",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "codecommit:BatchGetRepositories": {
+    "access_level": "Read",
+    "description": "Grants permission to get information about multiple repositories",
+    "service_name": "AWS CodeCommit",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "codecommit:DescribeMergeConflicts": {
+    "access_level": "Read",
+    "description": "Grants permission to get information about specific merge conflicts when attempting to merge two commits using either the three-way or the squash merge option",
+    "service_name": "AWS CodeCommit",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "codecommit:DescribePullRequestEvents": {
+    "access_level": "Read",
+    "description": "Grants permission to return information about one or more pull request events",
+    "service_name": "AWS CodeCommit",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "codecommit:GetApprovalRuleTemplate": {
+    "access_level": "Read",
+    "description": "Grants permission to return information about an approval rule template",
+    "service_name": "AWS CodeCommit",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "codecommit:GetBlob": {
+    "access_level": "Read",
+    "description": "Grants permission to view the encoded content of an individual file in an AWS CodeCommit repository from the AWS CodeCommit console",
+    "service_name": "AWS CodeCommit",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "codecommit:GetBranch": {
+    "access_level": "Read",
+    "description": "Grants permission to get details about a branch in an AWS CodeCommit repository with this API; does not control Git branch actions",
+    "service_name": "AWS CodeCommit",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "codecommit:GetComment": {
+    "access_level": "Read",
+    "description": "Grants permission to get the content of a comment made on a change, file, or commit in a repository",
+    "service_name": "AWS CodeCommit",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "codecommit:GetCommentReactions": {
+    "access_level": "Read",
+    "description": "Grants permission to get the reactions on a comment",
+    "service_name": "AWS CodeCommit",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "codecommit:GetCommentsForComparedCommit": {
+    "access_level": "Read",
+    "description": "Grants permission to get information about comments made on the comparison between two commits",
+    "service_name": "AWS CodeCommit",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "codecommit:GetCommentsForPullRequest": {
+    "access_level": "Read",
+    "description": "Grants permission to get comments made on a pull request",
+    "service_name": "AWS CodeCommit",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "codecommit:GetCommit": {
+    "access_level": "Read",
+    "description": "Grants permission to return information about a commit, including commit message and committer information, with this API; does not control Git log actions",
+    "service_name": "AWS CodeCommit",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "codecommit:GetCommitHistory": {
+    "access_level": "Read",
+    "description": "Grants permission to get information about the history of commits in a repository",
+    "service_name": "AWS CodeCommit",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "codecommit:GetCommitsFromMergeBase": {
+    "access_level": "Read",
+    "description": "Grants permission to get information about the difference between commits in the context of a potential merge",
+    "service_name": "AWS CodeCommit",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "codecommit:GetDifferences": {
+    "access_level": "Read",
+    "description": "Grants permission to view information about the differences between valid commit specifiers such as a branch, tag, HEAD, commit ID, or other fully qualified reference",
+    "service_name": "AWS CodeCommit",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "codecommit:GetFile": {
+    "access_level": "Read",
+    "description": "Grants permission to return the base-64 encoded contents of a specified file and its metadata",
+    "service_name": "AWS CodeCommit",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "codecommit:GetFolder": {
+    "access_level": "Read",
+    "description": "Grants permission to return the contents of a specified folder in a repository",
+    "service_name": "AWS CodeCommit",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "codecommit:GetMergeCommit": {
+    "access_level": "Read",
+    "description": "Grants permission to get information about a merge commit created by one of the merge options for pull requests that creates merge commits. Not all merge options create merge commits. This permission does not control Git merge actions",
+    "service_name": "AWS CodeCommit",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "codecommit:GetMergeConflicts": {
+    "access_level": "Read",
+    "description": "Grants permission to get information about merge conflicts between the before and after commit IDs for a pull request in a repository",
+    "service_name": "AWS CodeCommit",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "codecommit:GetMergeOptions": {
+    "access_level": "Read",
+    "description": "Grants permission to get information about merge options for pull requests that can be used to merge two commits; does not control Git merge actions",
+    "service_name": "AWS CodeCommit",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "codecommit:GetObjectIdentifier": {
+    "access_level": "Read",
+    "description": "Grants permission to resolve blobs, trees, and commits to their identifier",
+    "service_name": "AWS CodeCommit",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "codecommit:GetPullRequest": {
+    "access_level": "Read",
+    "description": "Grants permission to get information about a pull request in a specified repository",
+    "service_name": "AWS CodeCommit",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "codecommit:GetPullRequestApprovalStates": {
+    "access_level": "Read",
+    "description": "Grants permission to retrieve the current approvals on an inputted pull request",
+    "service_name": "AWS CodeCommit",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "codecommit:GetPullRequestOverrideState": {
+    "access_level": "Read",
+    "description": "Grants permission to retrieve the current override state of a given pull request",
+    "service_name": "AWS CodeCommit",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "codecommit:GetReferences": {
+    "access_level": "Read",
+    "description": "Grants permission to get details about references in an AWS CodeCommit repository; does not control Git reference actions",
+    "service_name": "AWS CodeCommit",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "codecommit:GetTree": {
+    "access_level": "Read",
+    "description": "Grants permission to view the contents of a specified tree in an AWS CodeCommit repository from the AWS CodeCommit console",
+    "service_name": "AWS CodeCommit",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "codecommit:GitPull": {
+    "access_level": "Read",
+    "description": "Grants permission to pull information from an AWS CodeCommit repository to a local repo",
+    "service_name": "AWS CodeCommit",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "codeguru-profiler:GetRecommendations": {
+    "access_level": "Read",
+    "description": "Grants permission to get recommendations",
+    "service_name": "Amazon CodeGuru Profiler",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "codeguru-reviewer:DescribeCodeReview": {
+    "access_level": "Read",
+    "description": "Grants permission to describe a code review",
+    "service_name": "Amazon CodeGuru Reviewer",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "codeguru-reviewer:DescribeRecommendationFeedback": {
+    "access_level": "Read",
+    "description": "Grants permission to describe a recommendation feedback on a code review",
+    "service_name": "Amazon CodeGuru Reviewer",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "codepipeline:GetPipelineExecution": {
+    "access_level": "Read",
+    "description": "Grants permission to view information about an execution of a pipeline, including details about artifacts, the pipeline execution ID, and the name, version, and status of the pipeline",
+    "service_name": "AWS CodePipeline",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "cognito-identity:LookupDeveloperIdentity": {
+    "access_level": "Read",
+    "description": "Grants permission to retrieve the IdentityId associated with a DeveloperUserIdentifier or the list of DeveloperUserIdentifiers associated with an IdentityId for an existing identity",
+    "service_name": "Amazon Cognito Identity",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "cognito-idp:AdminGetDevice": {
+    "access_level": "Read",
+    "description": "Grants permission to get information about any user's devices",
+    "service_name": "Amazon Cognito User Pools",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "cognito-idp:AdminGetUser": {
+    "access_level": "Read",
+    "description": "Grants permission to look up any user by user name",
+    "service_name": "Amazon Cognito User Pools",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "cognito-idp:AdminListDevices": {
+    "access_level": "List",
+    "description": "Grants permission to list any user's remembered devices",
+    "service_name": "Amazon Cognito User Pools",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "cognito-idp:AdminListGroupsForUser": {
+    "access_level": "List",
+    "description": "Grants permission to list the groups that any user belongs to",
+    "service_name": "Amazon Cognito User Pools",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "cognito-idp:AdminListUserAuthEvents": {
+    "access_level": "Read",
+    "description": "Grants permission to lists sign-in events for any user",
+    "service_name": "Amazon Cognito User Pools",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "cognito-idp:GetDevice": {
+    "access_level": "Read",
+    "description": "Gets the device",
+    "service_name": "Amazon Cognito User Pools",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "cognito-idp:GetGroup": {
+    "access_level": "Read",
+    "description": "Grants permission to describe a user pool group",
+    "service_name": "Amazon Cognito User Pools",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "cognito-idp:GetUser": {
+    "access_level": "Read",
+    "description": "Gets the user attributes and metadata for a user",
+    "service_name": "Amazon Cognito User Pools",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "cognito-idp:ListUsers": {
+    "access_level": "List",
+    "description": "Grants permission to list all user pool users",
+    "service_name": "Amazon Cognito User Pools",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "cognito-idp:ListDevices": {
+    "access_level": "List",
+    "description": "Lists the devices",
+    "service_name": "Amazon Cognito User Pools",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "cognito-idp:ListGroups": {
+    "access_level": "List",
+    "description": "Grants permission to list all groups in user pools",
+    "service_name": "Amazon Cognito User Pools",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "cognito-sync:ListRecords": {
+    "access_level": "Read",
+    "description": "Grants permission to get paginated records, optionally changed after a particular sync count for a dataset and identity",
+    "service_name": "Amazon Cognito Sync",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "cognito-sync:QueryRecords": {
+    "access_level": "Read",
+    "description": "Grants permission to query records",
+    "service_name": "Amazon Cognito Sync",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "config:GetStoredQuery": {
+    "access_level": "Read",
+    "description": "Grants permission to return the details of a specific stored query",
+    "service_name": "AWS Config",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "connect:ListUsers": {
+    "access_level": "List",
+    "description": "Grants permission to list user resources in an Amazon Connect instance",
+    "service_name": "Amazon Connect",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "datapipeline:QueryObjects": {
+    "access_level": "Read",
+    "description": "Grants permission to query the specified pipeline for the names of objects that match the specified set of conditions",
+    "service_name": "AWS Data Pipeline",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "dax:BatchGetItem": {
+    "access_level": "Read",
+    "description": "Grants permission to return the attributes of one or more items from one or more tables",
+    "service_name": "Amazon DynamoDB Accelerator (DAX)",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "dax:GetItem": {
+    "access_level": "Read",
+    "description": "Grants permission to the GetItem operation that returns a set of attributes for the item with the given primary key",
+    "service_name": "Amazon DynamoDB Accelerator (DAX)",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "dax:Query": {
+    "access_level": "Read",
+    "description": "Grants permission to use the primary key of a table or a secondary index to directly access items from that table or index",
+    "service_name": "Amazon DynamoDB Accelerator (DAX)",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "dax:Scan": {
+    "access_level": "Read",
+    "description": "Grants permission to return one or more items and item attributes by accessing every item in a table or a secondary index",
+    "service_name": "Amazon DynamoDB Accelerator (DAX)",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "dynamodb:BatchGetItem": {
+    "access_level": "Read",
+    "description": "Grants permission to return the attributes of one or more items from one or more tables",
+    "service_name": "Amazon DynamoDB",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "dynamodb:GetItem": {
+    "access_level": "Read",
+    "description": "Grants permission to the GetItem operation that returns a set of attributes for the item with the given primary key",
+    "service_name": "Amazon DynamoDB",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "dynamodb:GetRecords": {
+    "access_level": "Read",
+    "description": "Grants permission to retrieve the stream records from a given shard",
+    "service_name": "Amazon DynamoDB",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "dynamodb:Query": {
+    "access_level": "Read",
+    "description": "Grants permission to use the primary key of a table or a secondary index to directly access items from that table or index",
+    "service_name": "Amazon DynamoDB",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "dynamodb:Scan": {
+    "access_level": "Read",
+    "description": "Grants permission to return one or more items and item attributes by accessing every item in a table or a secondary index",
+    "service_name": "Amazon DynamoDB",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "ecr:BatchGetImage": {
+    "access_level": "Read",
+    "description": "Grants permission to get detailed information for specified images within a specified repository",
+    "service_name": "Amazon Elastic Container Registry",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "ecr:GetDownloadUrlForLayer": {
+    "access_level": "Read",
+    "description": "Grants permission to retrieve the download URL corresponding to an image layer",
+    "service_name": "Amazon Elastic Container Registry",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "es:ESHttpDelete": {
+    "access_level": "Write",
+    "description": "Grants permission to send HTTP DELETE requests to the OpenSearch APIs",
+    "service_name": "Amazon OpenSearch Service",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "es:ESHttpGet": {
+    "access_level": "Read",
+    "description": "Grants permission to send HTTP GET requests to the OpenSearch APIs",
+    "service_name": "Amazon OpenSearch Service",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "es:ESHttpHead": {
+    "access_level": "Read",
+    "description": "Grants permission to send HTTP HEAD requests to the OpenSearch APIs",
+    "service_name": "Amazon OpenSearch Service",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "es:ESHttpPatch": {
+    "access_level": "Write",
+    "description": "Grants permission to send HTTP PATCH requests to the OpenSearch APIs",
+    "service_name": "Amazon OpenSearch Service",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "es:ESHttpPost": {
+    "access_level": "Write",
+    "description": "Grants permission to send HTTP POST requests to the OpenSearch APIs",
+    "service_name": "Amazon OpenSearch Service",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "es:ESHttpPut": {
+    "access_level": "Write",
+    "description": "Grants permission to send HTTP PUT requests to the OpenSearch APIs",
+    "service_name": "Amazon OpenSearch Service",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "healthlake:ReadResource": {
+    "access_level": "Read",
+    "description": "Grants permission to read resource",
+    "service_name": "Amazon HealthLake",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "healthlake:SearchWithGet": {
+    "access_level": "Read",
+    "description": "Grants permission to search resources with GET method",
+    "service_name": "Amazon HealthLake",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "healthlake:SearchWithPost": {
+    "access_level": "Read",
+    "description": "Grants permission to search resources with POST method",
+    "service_name": "Amazon HealthLake",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "kendra:Query": {
+    "access_level": "Read",
+    "description": "Grants permission to query documents and faqs",
+    "service_name": "Amazon Kendra",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "kinesis:GetRecords": {
+    "access_level": "Read",
+    "description": "Grants permission to get data records from a shard",
+    "service_name": "Amazon Kinesis Data Streams",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "kinesisvideo:GetImages": {
+    "access_level": "Read",
+    "description": "Grants permission to get generated images from your Kinesis video stream",
+    "service_name": "Amazon Kinesis Video Streams",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "kinesisvideo:GetMedia": {
+    "access_level": "Read",
+    "description": "Grants permission to return media content of a Kinesis video stream",
+    "service_name": "Amazon Kinesis Video Streams",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "lambda:GetFunction": {
+    "access_level": "Read",
+    "description": "Grants permission to view details about an AWS Lambda function",
+    "service_name": "AWS Lambda",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "lambda:GetLayerVersion": {
+    "access_level": "Read",
+    "description": "Grants permission to view details about a version of an AWS Lambda layer. Note this action also supports GetLayerVersionByArn API",
+    "service_name": "AWS Lambda",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "lightsail:GetContainerImages": {
+    "access_level": "Read",
+    "description": "Grants permission to view the container images that are registered to your Amazon Lightsail container service",
+    "service_name": "Amazon Lightsail",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "logs:GetLogEvents": {
+    "access_level": "Read",
+    "description": "Grants permission to retrieve log events from the specified log stream",
+    "service_name": "Amazon CloudWatch Logs",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "logs:GetLogRecord": {
+    "access_level": "Read",
+    "description": "Grants permission to retrieve all the fields and values of a single log event",
+    "service_name": "Amazon CloudWatch Logs",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "logs:GetQueryResults": {
+    "access_level": "Read",
+    "description": "Grants permission to return the results from the specified query",
+    "service_name": "Amazon CloudWatch Logs",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "macie2:GetFindings": {
+    "access_level": "Read",
+    "description": "Grants permission to retrieve the details of one or more findings",
+    "service_name": "Amazon Macie",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "mediastore:GetObject": {
+    "access_level": "Read",
+    "description": "Grants permission to retrieve an object",
+    "service_name": "AWS Elemental MediaStore",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "qldb:GetBlock": {
+    "access_level": "Read",
+    "description": "Grants permission to retrieve a block from a ledger for a given BlockAddress",
+    "service_name": "Amazon QLDB",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "rds:DownloadCompleteDBLogFile": {
+    "access_level": "Read",
+    "description": "Grants permission to download specified log file",
+    "service_name": "Amazon RDS, Neptune & DocumentDB",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "rds:DownloadDBLogFilePortion": {
+    "access_level": "Read",
+    "description": "Grants permission to download all or a portion of the specified log file, up to 1 MB in size",
+    "service_name": "Amazon RDS, Neptune & DocumentDB",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "robomaker:GetWorldTemplateBody": {
+    "access_level": "Read",
+    "description": "Get the body of a world template",
+    "service_name": "AWS RoboMaker",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "s3-object-lambda:GetObject": {
+    "access_level": "Read",
+    "description": "Grants permission to retrieve objects from Amazon S3",
+    "service_name": "Amazon S3 Object Lambda",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "s3-object-lambda:GetObjectVersion": {
+    "access_level": "Read",
+    "description": "Grants permission to retrieve a specific version of an object",
+    "service_name": "Amazon S3 Object Lambda",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "s3-object-lambda:ListBucket": {
+    "access_level": "List",
+    "description": "Grants permission to list some or all of the objects in an Amazon S3 bucket (up to 1000)",
+    "service_name": "Amazon S3 Object Lambda",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "s3:GetObject": {
+    "access_level": "Read",
+    "description": "Grants permission to retrieve objects from Amazon S3",
+    "service_name": "Amazon S3",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "s3:GetObjectVersion": {
+    "access_level": "Read",
+    "description": "Grants permission to retrieve a specific version of an object",
+    "service_name": "Amazon S3",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "sagemaker:Search": {
+    "access_level": "Read",
+    "description": "Grants permission to search for SageMaker objects",
+    "service_name": "Amazon SageMaker",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "sdb:Select": {
+    "access_level": "Read",
+    "description": "Description for Select",
+    "service_name": "Amazon SimpleDB",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "serverlessrepo:GetApplication": {
+    "access_level": "Read",
+    "description": "Grants permission to get the specified application",
+    "service_name": "AWS Serverless Application Repository",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "serverlessrepo:GetCloudFormationTemplate": {
+    "access_level": "Read",
+    "description": "Grants permission to get the specified AWS CloudFormation template",
+    "service_name": "AWS Serverless Application Repository",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "sqs:ReceiveMessage": {
+    "access_level": "Read",
+    "description": "Grants permission to retrieve one or more messages, with a maximum limit of 10 messages, from the specified queue",
+    "service_name": "Amazon SQS",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "ssm:GetDocument": {
+    "access_level": "Read",
+    "description": "Grants permission to view the contents of a specified SSM document",
+    "service_name": "AWS Systems Manager",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "ssm:GetParameter": {
+    "access_level": "Read",
+    "description": "Grants permission to view information about a specified parameter",
+    "service_name": "AWS Systems Manager",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "ssm:GetParameterHistory": {
+    "access_level": "Read",
+    "description": "Grants permission to view details and changes for a specified parameter",
+    "service_name": "AWS Systems Manager",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "ssm:GetParameters": {
+    "access_level": "Read",
+    "description": "Grants permission to view information about multiple specified parameters",
+    "service_name": "AWS Systems Manager",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "ssm:GetParametersByPath": {
+    "access_level": "Read",
+    "description": "Grants permission to view information about parameters in a specified hierarchy",
+    "service_name": "AWS Systems Manager",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "sso-directory:DescribeGroup": {
+    "access_level": "Read",
+    "description": "Grants permission to query the group data, not including user and group members",
+    "service_name": "AWS IAM Identity Center (successor to AWS Single Sign-On) directory",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "sso-directory:DescribeUser": {
+    "access_level": "Read",
+    "description": "Grants permission to retrieve information about a user from the directory that AWS IAM Identity Center provides by default",
+    "service_name": "AWS IAM Identity Center (successor to AWS Single Sign-On) directory",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "sso-directory:SearchGroups": {
+    "access_level": "Read",
+    "description": "Grants permission to search for groups within the associated directory",
+    "service_name": "AWS IAM Identity Center (successor to AWS Single Sign-On) directory",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "sso-directory:SearchUsers": {
+    "access_level": "Read",
+    "description": "Grants permission to search for users within the associated directory",
+    "service_name": "AWS IAM Identity Center (successor to AWS Single Sign-On) directory",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "sso:SearchGroups": {
+    "access_level": "Read",
+    "description": "Grants permission to search for groups within the associated directory",
+    "service_name": "AWS IAM Identity Center (successor to AWS Single Sign-On)",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "sso:SearchUsers": {
+    "access_level": "Read",
+    "description": "Grants permission to search for users within the associated directory",
+    "service_name": "AWS IAM Identity Center (successor to AWS Single Sign-On)",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "support:DescribeAttachment": {
+    "access_level": "Read",
+    "description": "Returns the description for an attachment.",
+    "service_name": "AWS Support",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "support:DescribeCommunications": {
+    "access_level": "Read",
+    "description": "Returns the communications and attachments for one or more AWS Support cases.",
+    "service_name": "AWS Support",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "workdocs:GetDocument": {
+    "access_level": "Read",
+    "description": "Grants permission to retrieve the specified document object",
+    "service_name": "Amazon WorkDocs",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "workdocs:GetDocumentPath": {
+    "access_level": "Read",
+    "description": "Grants permission to retrieve the path information (the hierarchy from the root folder) for the requested document",
+    "service_name": "Amazon WorkDocs",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "workdocs:GetDocumentVersion": {
+    "access_level": "Read",
+    "description": "Grants permission to retrieve version metadata for the specified document",
+    "service_name": "Amazon WorkDocs",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "workmail:ListGroupMembers": {
+    "access_level": "List",
+    "description": "Grants permission to read an overview of the members of a group. Users and groups can be members of a group",
+    "service_name": "Amazon WorkMail",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "workmail:ListGroups": {
+    "access_level": "List",
+    "description": "Grants permission to list summaries of the organization's groups",
+    "service_name": "Amazon WorkMail",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "workmail:ListUsers": {
+    "access_level": "List",
+    "description": "Grants permission to list the organization's users",
+    "service_name": "Amazon WorkMail",
+    "risk_category": [
+      "DataAccess"
+    ]
+  },
+  "codestar:AssociateTeamMember": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to add a user to the team for an AWS CodeStar project",
+    "service_name": "AWS CodeStar",
+    "risk_category": [
+      "PrivEsc",
+      "ResourceExposure"
+    ]
+  },
+  "codestar:CreateProject": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to create a project with minimal structure, customer policies, and no resources",
+    "service_name": "AWS CodeStar",
+    "risk_category": [
+      "PrivEsc",
+      "ResourceExposure"
+    ]
+  },
+  "glue:UpdateDevEndpoint": {
+    "access_level": "Write",
+    "description": "Grants permission to update a development endpoint",
+    "service_name": "AWS Glue",
+    "risk_category": [
+      "PrivEsc"
+    ]
+  },
+  "iam:AddUserToGroup": {
+    "access_level": "Write",
+    "description": "Grants permission to add an IAM user to the specified IAM group",
+    "service_name": "AWS Identity and Access Management",
+    "risk_category": [
+      "PrivEsc",
+      "ResourceExposure"
+    ]
+  },
+  "iam:AttachGroupPolicy": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to attach a managed policy to the specified IAM group",
+    "service_name": "AWS Identity and Access Management",
+    "risk_category": [
+      "PrivEsc",
+      "ResourceExposure"
+    ]
+  },
+  "iam:AttachRolePolicy": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to attach a managed policy to the specified IAM role",
+    "service_name": "AWS Identity and Access Management",
+    "risk_category": [
+      "PrivEsc",
+      "ResourceExposure"
+    ]
+  },
+  "iam:AttachUserPolicy": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to attach a managed policy to the specified IAM user",
+    "service_name": "AWS Identity and Access Management",
+    "risk_category": [
+      "PrivEsc",
+      "ResourceExposure"
+    ]
+  },
+  "iam:CreatePolicyVersion": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to create a new version of the specified managed policy",
+    "service_name": "AWS Identity and Access Management",
+    "risk_category": [
+      "PrivEsc",
+      "ResourceExposure"
+    ]
+  },
+  "iam:CreateServiceLinkedRole": {
+    "access_level": "Write",
+    "description": "Grants permission to create an IAM role that allows an AWS service to perform actions on your behalf",
+    "service_name": "AWS Identity and Access Management",
+    "risk_category": [
+      "PrivEsc",
+      "ResourceExposure"
+    ]
+  },
+  "iam:CreateVirtualMFADevice": {
+    "access_level": "Write",
+    "description": "Grants permission to create a new virtual MFA device",
+    "service_name": "AWS Identity and Access Management",
+    "risk_category": [
+      "PrivEsc",
+      "ResourceExposure"
+    ]
+  },
+  "iam:EnableMFADevice": {
+    "access_level": "Write",
+    "description": "Grants permission to enable an MFA device and associate it with the specified IAM user",
+    "service_name": "AWS Identity and Access Management",
+    "risk_category": [
+      "PrivEsc",
+      "ResourceExposure"
+    ]
+  },
+  "iam:PassRole": {
+    "access_level": "Write",
+    "description": "Grants permission to pass a role to a service",
+    "service_name": "AWS Identity and Access Management",
+    "risk_category": [
+      "PrivEsc",
+      "ResourceExposure"
+    ]
+  },
+  "iam:PutGroupPolicy": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to create or update an inline policy document that is embedded in the specified IAM group",
+    "service_name": "AWS Identity and Access Management",
+    "risk_category": [
+      "PrivEsc",
+      "ResourceExposure"
+    ]
+  },
+  "iam:PutRolePolicy": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to create or update an inline policy document that is embedded in the specified IAM role",
+    "service_name": "AWS Identity and Access Management",
+    "risk_category": [
+      "PrivEsc",
+      "ResourceExposure"
+    ]
+  },
+  "iam:PutUserPolicy": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to create or update an inline policy document that is embedded in the specified IAM user",
+    "service_name": "AWS Identity and Access Management",
+    "risk_category": [
+      "PrivEsc",
+      "ResourceExposure"
+    ]
+  },
+  "iam:ResyncMFADevice": {
+    "access_level": "Write",
+    "description": "Grants permission to synchronize the specified MFA device with its IAM entity (user or role)",
+    "service_name": "AWS Identity and Access Management",
+    "risk_category": [
+      "PrivEsc",
+      "ResourceExposure"
+    ]
+  },
+  "iam:SetDefaultPolicyVersion": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to set the version of the specified policy as the policy's default version",
+    "service_name": "AWS Identity and Access Management",
+    "risk_category": [
+      "PrivEsc",
+      "ResourceExposure"
+    ]
+  },
+  "iam:UpdateAssumeRolePolicy": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to update the policy that grants an IAM entity permission to assume a role",
+    "service_name": "AWS Identity and Access Management",
+    "risk_category": [
+      "PrivEsc",
+      "ResourceExposure"
+    ]
+  },
+  "iam:UpdateLoginProfile": {
+    "access_level": "Write",
+    "description": "Grants permission to change the password for the specified IAM user",
+    "service_name": "AWS Identity and Access Management",
+    "risk_category": [
+      "PrivEsc",
+      "ResourceExposure"
+    ]
+  },
+  "acm-pca:CreatePermission": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to create a permission for an AWS Private CA",
+    "service_name": "AWS Private Certificate Authority",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "acm-pca:DeletePermission": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to delete a permission for an AWS Private CA",
+    "service_name": "AWS Private Certificate Authority",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "acm-pca:DeletePolicy": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to delete the policy for an AWS Private CA",
+    "service_name": "AWS Private Certificate Authority",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "acm-pca:PutPolicy": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to put a policy on an AWS Private CA",
+    "service_name": "AWS Private Certificate Authority",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "apigateway:UpdateRestApiPolicy": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to manage the IAM resource policy for an API. This is an additional authorization control for managing an API due to the sensitive nature of the resource policy",
+    "service_name": "Amazon API Gateway Management",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "backup:DeleteBackupVaultAccessPolicy": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to delete backup vault access policy",
+    "service_name": "AWS Backup",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "backup:PutBackupVaultAccessPolicy": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to add an access policy to the backup vault",
+    "service_name": "AWS Backup",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "chime:DeleteVoiceConnectorTerminationCredentials": {
+    "access_level": "Write",
+    "description": "Grants permission to delete SIP termination credentials for the specified Amazon Chime Voice Connector",
+    "service_name": "Amazon Chime",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "chime:PutVoiceConnectorTerminationCredentials": {
+    "access_level": "Write",
+    "description": "Grants permission to add SIP termination credentials for the specified Amazon Chime Voice Connector",
+    "service_name": "Amazon Chime",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "cloudformation:SetStackPolicy": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to set a stack policy for a specified stack",
+    "service_name": "AWS CloudFormation & Cloud Control API",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "cloudsearch:UpdateServiceAccessPolicies": {
+    "access_level": "Permissions management",
+    "description": "Configures the access rules that control access to the domain's document and search endpoints",
+    "service_name": "Amazon CloudSearch",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "codeartifact:DeleteDomainPermissionsPolicy": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to delete the resource policy set on a domain",
+    "service_name": "AWS CodeArtifact",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "codeartifact:DeleteRepositoryPermissionsPolicy": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to delete the resource policy set on a repository",
+    "service_name": "AWS CodeArtifact",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "codebuild:DeleteResourcePolicy": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to delete a resource policy for the associated project or report group",
+    "service_name": "AWS CodeBuild",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "codebuild:DeleteSourceCredentials": {
+    "access_level": "Write",
+    "description": "Grants permission to delete a set of GitHub, GitHub Enterprise, or Bitbucket source credentials",
+    "service_name": "AWS CodeBuild",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "codebuild:ImportSourceCredentials": {
+    "access_level": "Write",
+    "description": "Grants permission to import the source repository credentials for an AWS CodeBuild project that has its source code stored in a GitHub, GitHub Enterprise, or Bitbucket repository",
+    "service_name": "AWS CodeBuild",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "codebuild:PutResourcePolicy": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to create a resource policy for the associated project or report group",
+    "service_name": "AWS CodeBuild",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "codeguru-profiler:PutPermission": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to update the list of principals allowed for an action group in the resource policy associated with the specified Profiling Group",
+    "service_name": "Amazon CodeGuru Profiler",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "codeguru-profiler:RemovePermission": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to remove the permission of specified Action Group from the resource policy associated with the specified Profiling Group",
+    "service_name": "Amazon CodeGuru Profiler",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "codestar:DeleteProject": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to delete a project, including project resources. Does not delete users associated with the project, but does delete the IAM roles that allowed access to the project",
+    "service_name": "AWS CodeStar",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "codestar:DisassociateTeamMember": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to remove a user from a project. Removing a user from a project also removes the IAM policies from that user that allowed access to the project and its resources",
+    "service_name": "AWS CodeStar",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "codestar:UpdateTeamMember": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to update team member attributes within a CodeStar project",
+    "service_name": "AWS CodeStar",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "cognito-identity:CreateIdentityPool": {
+    "access_level": "Write",
+    "description": "Grants permission to create a new identity pool",
+    "service_name": "Amazon Cognito Identity",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "cognito-identity:DeleteIdentities": {
+    "access_level": "Write",
+    "description": "Grants permission to delete identities from an identity pool. You can specify a list of 1-60 identities that you want to delete",
+    "service_name": "Amazon Cognito Identity",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "cognito-identity:DeleteIdentityPool": {
+    "access_level": "Write",
+    "description": "Grants permission to delete a user pool. Once a pool is deleted, users will not be able to authenticate with the pool",
+    "service_name": "Amazon Cognito Identity",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "cognito-identity:GetId": {
+    "access_level": "Write",
+    "description": "Grants permission to generate (or retrieve) a Cognito ID. Supplying multiple logins will create an implicit linked account",
+    "service_name": "Amazon Cognito Identity",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "cognito-identity:MergeDeveloperIdentities": {
+    "access_level": "Write",
+    "description": "Grants permission to merge two users having different IdentityIds, existing in the same identity pool, and identified by the same developer provider",
+    "service_name": "Amazon Cognito Identity",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "cognito-identity:SetIdentityPoolRoles": {
+    "access_level": "Write",
+    "description": "Grants permission to set the roles for an identity pool. These roles are used when making calls to GetCredentialsForIdentity action",
+    "service_name": "Amazon Cognito Identity",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "cognito-identity:UnlinkDeveloperIdentity": {
+    "access_level": "Write",
+    "description": "Grants permission to unlink a DeveloperUserIdentifier from an existing identity",
+    "service_name": "Amazon Cognito Identity",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "cognito-identity:UnlinkIdentity": {
+    "access_level": "Write",
+    "description": "Grants permission to unlink a federated identity from an existing account",
+    "service_name": "Amazon Cognito Identity",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "cognito-identity:UpdateIdentityPool": {
+    "access_level": "Write",
+    "description": "Grants permission to update an identity pool",
+    "service_name": "Amazon Cognito Identity",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "deeplens:AssociateServiceRoleToAccount": {
+    "access_level": "Permissions management",
+    "description": "Associates the user's account with IAM roles controlling various permissions needed by AWS DeepLens for proper functionality.",
+    "service_name": "AWS DeepLens",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "ds:CreateConditionalForwarder": {
+    "access_level": "Write",
+    "description": "Grants permission to create a conditional forwarder associated with your AWS directory",
+    "service_name": "AWS Directory Service",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "ds:CreateDirectory": {
+    "access_level": "Write",
+    "description": "Grants permission to create a Simple AD directory",
+    "service_name": "AWS Directory Service",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "ds:CreateMicrosoftAD": {
+    "access_level": "Write",
+    "description": "Grants permission to create a Microsoft AD in the AWS cloud",
+    "service_name": "AWS Directory Service",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "ds:CreateTrust": {
+    "access_level": "Write",
+    "description": "Grants permission to initiate the creation of the AWS side of a trust relationship between a Microsoft AD in the AWS cloud and an external domain",
+    "service_name": "AWS Directory Service",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "ds:ShareDirectory": {
+    "access_level": "Write",
+    "description": "Grants permission to share a specified directory in your AWS account (directory owner) with another AWS account (directory consumer). With this operation you can use your directory from any AWS account and from any Amazon VPC within an AWS Region",
+    "service_name": "AWS Directory Service",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "ec2:CreateNetworkInterfacePermission": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to create a permission for an AWS-authorized user to perform certain operations on a network interface",
+    "service_name": "Amazon EC2",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "ec2:DeleteNetworkInterfacePermission": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to delete a permission that is associated with a network interface",
+    "service_name": "Amazon EC2",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "ec2:ModifySnapshotAttribute": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to add or remove permission settings for a snapshot",
+    "service_name": "Amazon EC2",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "ec2:ModifyVpcEndpointServicePermissions": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to modify the permissions for a VPC endpoint service",
+    "service_name": "Amazon EC2",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "ec2:ResetSnapshotAttribute": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to reset permission settings for a snapshot",
+    "service_name": "Amazon EC2",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "ecr:DeleteRepositoryPolicy": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to delete the repository policy from a specified repository",
+    "service_name": "Amazon Elastic Container Registry",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "ecr:SetRepositoryPolicy": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to apply a repository policy on a specified repository to control access permissions",
+    "service_name": "Amazon Elastic Container Registry",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "elasticfilesystem:DeleteFileSystemPolicy": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to delete the resource-level policy for a file system",
+    "service_name": "Amazon Elastic File System",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "elasticfilesystem:PutFileSystemPolicy": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to apply a resource-level policy that defines the actions allowed or denied from given actors for the specified file system",
+    "service_name": "Amazon Elastic File System",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "elasticmapreduce:PutBlockPublicAccessConfiguration": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to create or update the EMR block public access configuration for the AWS account in the Region",
+    "service_name": "Amazon Elastic MapReduce",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "es:CreateElasticsearchDomain": {
+    "access_level": "Write",
+    "description": "Grants permission to create an OpenSearch Service domain. This permission is deprecated. Use CreateDomain instead",
+    "service_name": "Amazon OpenSearch Service",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "es:UpdateElasticsearchDomainConfig": {
+    "access_level": "Write",
+    "description": "Grants permission to modify the configuration of an OpenSearch Service domain, such as the instance type or number of instances. This permission is deprecated. Use UpdateDomainConfig instead",
+    "service_name": "Amazon OpenSearch Service",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "glacier:AbortVaultLock": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to abort the vault locking process if the vault lock is not in the Locked state",
+    "service_name": "Amazon S3 Glacier",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "glacier:CompleteVaultLock": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to complete the vault locking process",
+    "service_name": "Amazon S3 Glacier",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "glacier:DeleteVaultAccessPolicy": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to delete the access policy associated with the specified vault",
+    "service_name": "Amazon S3 Glacier",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "glacier:InitiateVaultLock": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to initiate the vault locking process",
+    "service_name": "Amazon S3 Glacier",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "glacier:SetDataRetrievalPolicy": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to set and then enacts a data retrieval policy in the region specified in the PUT request",
+    "service_name": "Amazon S3 Glacier",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "glacier:SetVaultAccessPolicy": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to configure an access policy for a vault; will overwrite an existing policy",
+    "service_name": "Amazon S3 Glacier",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "glue:DeleteResourcePolicy": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to delete a resource policy",
+    "service_name": "AWS Glue",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "glue:PutResourcePolicy": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to update a resource policy",
+    "service_name": "AWS Glue",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "greengrass:AssociateServiceRoleToAccount": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to associate a role with your account. AWS IoT Greengrass uses this role to access your Lambda functions and AWS IoT resources",
+    "service_name": "AWS IoT Greengrass",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "health:DisableHealthServiceAccessForOrganization": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to disable the Organizational View feature",
+    "service_name": "AWS Health APIs and Notifications",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "health:EnableHealthServiceAccessForOrganization": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to enable the Organizational View feature",
+    "service_name": "AWS Health APIs and Notifications",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "iam:AddClientIDToOpenIDConnectProvider": {
+    "access_level": "Write",
+    "description": "Grants permission to add a new client ID (audience) to the list of registered IDs for the specified IAM OpenID Connect (OIDC) provider resource",
+    "service_name": "AWS Identity and Access Management",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "iam:AddRoleToInstanceProfile": {
+    "access_level": "Write",
+    "description": "Grants permission to add an IAM role to the specified instance profile",
+    "service_name": "AWS Identity and Access Management",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "iam:ChangePassword": {
+    "access_level": "Write",
+    "description": "Grants permission for an IAM user to change their own password",
+    "service_name": "AWS Identity and Access Management",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "iam:CreateAccountAlias": {
+    "access_level": "Write",
+    "description": "Grants permission to create an alias for your AWS account",
+    "service_name": "AWS Identity and Access Management",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "iam:CreateGroup": {
+    "access_level": "Write",
+    "description": "Grants permission to create a new group",
+    "service_name": "AWS Identity and Access Management",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "iam:CreateInstanceProfile": {
+    "access_level": "Write",
+    "description": "Grants permission to create a new instance profile",
+    "service_name": "AWS Identity and Access Management",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "iam:CreateOpenIDConnectProvider": {
+    "access_level": "Write",
+    "description": "Grants permission to create an IAM resource that describes an identity provider (IdP) that supports OpenID Connect (OIDC)",
+    "service_name": "AWS Identity and Access Management",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "iam:CreatePolicy": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to create a new managed policy",
+    "service_name": "AWS Identity and Access Management",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "iam:CreateRole": {
+    "access_level": "Write",
+    "description": "Grants permission to create a new role",
+    "service_name": "AWS Identity and Access Management",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "iam:CreateSAMLProvider": {
+    "access_level": "Write",
+    "description": "Grants permission to create an IAM resource that describes an identity provider (IdP) that supports SAML 2.0",
+    "service_name": "AWS Identity and Access Management",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "iam:CreateUser": {
+    "access_level": "Write",
+    "description": "Grants permission to create a new IAM user",
+    "service_name": "AWS Identity and Access Management",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "iam:DeactivateMFADevice": {
+    "access_level": "Write",
+    "description": "Grants permission to deactivate the specified MFA device and remove its association with the IAM user for which it was originally enabled",
+    "service_name": "AWS Identity and Access Management",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "iam:DeleteAccessKey": {
+    "access_level": "Write",
+    "description": "Grants permission to delete the access key pair that is associated with the specified IAM user",
+    "service_name": "AWS Identity and Access Management",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "iam:DeleteAccountAlias": {
+    "access_level": "Write",
+    "description": "Grants permission to delete the specified AWS account alias",
+    "service_name": "AWS Identity and Access Management",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "iam:DeleteAccountPasswordPolicy": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to delete the password policy for the AWS account",
+    "service_name": "AWS Identity and Access Management",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "iam:DeleteGroup": {
+    "access_level": "Write",
+    "description": "Grants permission to delete the specified IAM group",
+    "service_name": "AWS Identity and Access Management",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "iam:DeleteGroupPolicy": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to delete the specified inline policy from its group",
+    "service_name": "AWS Identity and Access Management",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "iam:DeleteInstanceProfile": {
+    "access_level": "Write",
+    "description": "Grants permission to delete the specified instance profile",
+    "service_name": "AWS Identity and Access Management",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "iam:DeleteLoginProfile": {
+    "access_level": "Write",
+    "description": "Grants permission to delete the password for the specified IAM user",
+    "service_name": "AWS Identity and Access Management",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "iam:DeleteOpenIDConnectProvider": {
+    "access_level": "Write",
+    "description": "Grants permission to delete an OpenID Connect identity provider (IdP) resource object in IAM",
+    "service_name": "AWS Identity and Access Management",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "iam:DeletePolicy": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to delete the specified managed policy and remove it from any IAM entities (users, groups, or roles) to which it is attached",
+    "service_name": "AWS Identity and Access Management",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "iam:DeletePolicyVersion": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to delete a version from the specified managed policy",
+    "service_name": "AWS Identity and Access Management",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "iam:DeleteRole": {
+    "access_level": "Write",
+    "description": "Grants permission to delete the specified role",
+    "service_name": "AWS Identity and Access Management",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "iam:DeleteRolePermissionsBoundary": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to remove the permissions boundary from a role",
+    "service_name": "AWS Identity and Access Management",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "iam:DeleteRolePolicy": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to delete the specified inline policy from the specified role",
+    "service_name": "AWS Identity and Access Management",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "iam:DeleteSAMLProvider": {
+    "access_level": "Write",
+    "description": "Grants permission to delete a SAML provider resource in IAM",
+    "service_name": "AWS Identity and Access Management",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "iam:DeleteServerCertificate": {
+    "access_level": "Write",
+    "description": "Grants permission to delete the specified server certificate",
+    "service_name": "AWS Identity and Access Management",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "iam:DeleteServiceLinkedRole": {
+    "access_level": "Write",
+    "description": "Grants permission to delete an IAM role that is linked to a specific AWS service, if the service is no longer using it",
+    "service_name": "AWS Identity and Access Management",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "iam:DeleteServiceSpecificCredential": {
+    "access_level": "Write",
+    "description": "Grants permission to delete the specified service-specific credential for an IAM user",
+    "service_name": "AWS Identity and Access Management",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "iam:DeleteSigningCertificate": {
+    "access_level": "Write",
+    "description": "Grants permission to delete a signing certificate that is associated with the specified IAM user",
+    "service_name": "AWS Identity and Access Management",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "iam:DeleteSSHPublicKey": {
+    "access_level": "Write",
+    "description": "Grants permission to delete the specified SSH public key",
+    "service_name": "AWS Identity and Access Management",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "iam:DeleteUser": {
+    "access_level": "Write",
+    "description": "Grants permission to delete the specified IAM user",
+    "service_name": "AWS Identity and Access Management",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "iam:DeleteUserPermissionsBoundary": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to remove the permissions boundary from the specified IAM user",
+    "service_name": "AWS Identity and Access Management",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "iam:DeleteUserPolicy": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to delete the specified inline policy from an IAM user",
+    "service_name": "AWS Identity and Access Management",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "iam:DeleteVirtualMFADevice": {
+    "access_level": "Write",
+    "description": "Grants permission to delete a virtual MFA device",
+    "service_name": "AWS Identity and Access Management",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "iam:DetachGroupPolicy": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to detach a managed policy from the specified IAM group",
+    "service_name": "AWS Identity and Access Management",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "iam:DetachRolePolicy": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to detach a managed policy from the specified role",
+    "service_name": "AWS Identity and Access Management",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "iam:DetachUserPolicy": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to detach a managed policy from the specified IAM user",
+    "service_name": "AWS Identity and Access Management",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "iam:PutRolePermissionsBoundary": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to set a managed policy as a permissions boundary for a role",
+    "service_name": "AWS Identity and Access Management",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "iam:PutUserPermissionsBoundary": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to set a managed policy as a permissions boundary for an IAM user",
+    "service_name": "AWS Identity and Access Management",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "iam:RemoveClientIDFromOpenIDConnectProvider": {
+    "access_level": "Write",
+    "description": "Grants permission to remove the client ID (audience) from the list of client IDs in the specified IAM OpenID Connect (OIDC) provider resource",
+    "service_name": "AWS Identity and Access Management",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "iam:RemoveRoleFromInstanceProfile": {
+    "access_level": "Write",
+    "description": "Grants permission to remove an IAM role from the specified EC2 instance profile",
+    "service_name": "AWS Identity and Access Management",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "iam:RemoveUserFromGroup": {
+    "access_level": "Write",
+    "description": "Grants permission to remove an IAM user from the specified group",
+    "service_name": "AWS Identity and Access Management",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "iam:SetSecurityTokenServicePreferences": {
+    "access_level": "Write",
+    "description": "Grants permission to set the STS global endpoint token version",
+    "service_name": "AWS Identity and Access Management",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "iam:UpdateAccountPasswordPolicy": {
+    "access_level": "Write",
+    "description": "Grants permission to update the password policy settings for the AWS account",
+    "service_name": "AWS Identity and Access Management",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "iam:UpdateGroup": {
+    "access_level": "Write",
+    "description": "Grants permission to update the name or path of the specified IAM group",
+    "service_name": "AWS Identity and Access Management",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "iam:UpdateOpenIDConnectProviderThumbprint": {
+    "access_level": "Write",
+    "description": "Grants permission to update the entire list of server certificate thumbprints that are associated with an OpenID Connect (OIDC) provider resource",
+    "service_name": "AWS Identity and Access Management",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "iam:UpdateRole": {
+    "access_level": "Write",
+    "description": "Grants permission to update the description or maximum session duration setting of a role",
+    "service_name": "AWS Identity and Access Management",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "iam:UpdateRoleDescription": {
+    "access_level": "Write",
+    "description": "Grants permission to update only the description of a role",
+    "service_name": "AWS Identity and Access Management",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "iam:UpdateSAMLProvider": {
+    "access_level": "Write",
+    "description": "Grants permission to update the metadata document for an existing SAML provider resource",
+    "service_name": "AWS Identity and Access Management",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "iam:UpdateServerCertificate": {
+    "access_level": "Write",
+    "description": "Grants permission to update the name or the path of the specified server certificate stored in IAM",
+    "service_name": "AWS Identity and Access Management",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "iam:UpdateServiceSpecificCredential": {
+    "access_level": "Write",
+    "description": "Grants permission to update the status of a service-specific credential to active or inactive for an IAM user",
+    "service_name": "AWS Identity and Access Management",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "iam:UpdateSigningCertificate": {
+    "access_level": "Write",
+    "description": "Grants permission to update the status of the specified user signing certificate to active or disabled",
+    "service_name": "AWS Identity and Access Management",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "iam:UpdateSSHPublicKey": {
+    "access_level": "Write",
+    "description": "Grants permission to update the status of an IAM user's SSH public key to active or inactive",
+    "service_name": "AWS Identity and Access Management",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "iam:UpdateUser": {
+    "access_level": "Write",
+    "description": "Grants permission to update the name or the path of the specified IAM user",
+    "service_name": "AWS Identity and Access Management",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "iam:UploadServerCertificate": {
+    "access_level": "Write",
+    "description": "Grants permission to upload a server certificate entity for the AWS account",
+    "service_name": "AWS Identity and Access Management",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "iam:UploadSigningCertificate": {
+    "access_level": "Write",
+    "description": "Grants permission to upload an X.509 signing certificate and associate it with the specified IAM user",
+    "service_name": "AWS Identity and Access Management",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "iam:UploadSSHPublicKey": {
+    "access_level": "Write",
+    "description": "Grants permission to upload an SSH public key and associate it with the specified IAM user",
+    "service_name": "AWS Identity and Access Management",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "imagebuilder:PutComponentPolicy": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to set the resource policy associated with a component",
+    "service_name": "Amazon EC2 Image Builder",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "imagebuilder:PutImagePolicy": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to set the resource policy associated with an image",
+    "service_name": "Amazon EC2 Image Builder",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "imagebuilder:PutImageRecipePolicy": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to set the resource policy associated with an image recipe",
+    "service_name": "Amazon EC2 Image Builder",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "iot:AttachPolicy": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to attach a policy to the specified target",
+    "service_name": "AWS IoT",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "iot:AttachPrincipalPolicy": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to attach the specified policy to the specified principal (certificate or other credential)",
+    "service_name": "AWS IoT",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "iot:DetachPolicy": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to detach a policy from the specified target",
+    "service_name": "AWS IoT",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "iot:DetachPrincipalPolicy": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to remove the specified policy from the specified certificate",
+    "service_name": "AWS IoT",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "iot:SetDefaultAuthorizer": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to set the default authorizer. This will be used if a websocket connection is made without specifying an authorizer",
+    "service_name": "AWS IoT",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "iot:SetDefaultPolicyVersion": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to set the specified version of the specified policy as the policy's default (operative) version",
+    "service_name": "AWS IoT",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "iotsitewise:CreateAccessPolicy": {
+    "access_level": "Write",
+    "description": "Grants permission to create an access policy for a portal or a project",
+    "service_name": "AWS IoT SiteWise",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "iotsitewise:DeleteAccessPolicy": {
+    "access_level": "Write",
+    "description": "Grants permission to delete an access policy",
+    "service_name": "AWS IoT SiteWise",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "iotsitewise:UpdateAccessPolicy": {
+    "access_level": "Write",
+    "description": "Grants permission to update an access policy",
+    "service_name": "AWS IoT SiteWise",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "kms:CreateGrant": {
+    "access_level": "Permissions management",
+    "description": "Controls permission to add a grant to an AWS KMS key. You can use grants to add permissions without changing the key policy or IAM policy",
+    "service_name": "AWS Key Management Service",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "kms:PutKeyPolicy": {
+    "access_level": "Permissions management",
+    "description": "Controls permission to replace the key policy for the specified AWS KMS key",
+    "service_name": "AWS Key Management Service",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "kms:RetireGrant": {
+    "access_level": "Permissions management",
+    "description": "Controls permission to retire a grant. The RetireGrant operation is typically called by the grant user after they complete the tasks that the grant allowed them to perform",
+    "service_name": "AWS Key Management Service",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "kms:RevokeGrant": {
+    "access_level": "Permissions management",
+    "description": "Controls permission to revoke a grant, which denies permission for all operations that depend on the grant",
+    "service_name": "AWS Key Management Service",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "lakeformation:BatchGrantPermissions": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to data lake permissions to one or more principals in a batch",
+    "service_name": "AWS Lake Formation",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "lakeformation:BatchRevokePermissions": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to revoke data lake permissions from one or more principals in a batch",
+    "service_name": "AWS Lake Formation",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "lakeformation:GrantPermissions": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to data lake permissions to a principal",
+    "service_name": "AWS Lake Formation",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "lakeformation:PutDataLakeSettings": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to overwrite data lake settings such as the list of data lake administrators and database and table default permissions",
+    "service_name": "AWS Lake Formation",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "lakeformation:RevokePermissions": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to revoke data lake permissions from a principal",
+    "service_name": "AWS Lake Formation",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "lambda:AddLayerVersionPermission": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to add permissions to the resource-based policy of a version of an AWS Lambda layer",
+    "service_name": "AWS Lambda",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "lambda:AddPermission": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to give an AWS service or another account permission to use an AWS Lambda function",
+    "service_name": "AWS Lambda",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "lambda:DisableReplication": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to disable replication for a Lambda@Edge function",
+    "service_name": "AWS Lambda",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "lambda:EnableReplication": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to enable replication for a Lambda@Edge function",
+    "service_name": "AWS Lambda",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "lambda:RemoveLayerVersionPermission": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to remove a statement from the permissions policy for a version of an AWS Lambda layer",
+    "service_name": "AWS Lambda",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "lambda:RemovePermission": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to revoke function-use permission from an AWS service or another account",
+    "service_name": "AWS Lambda",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "license-manager:UpdateServiceSettings": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to updates service settings",
+    "service_name": "AWS License Manager",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "logs:DeleteResourcePolicy": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to delete a resource policy from this account",
+    "service_name": "Amazon CloudWatch Logs",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "logs:PutResourcePolicy": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to create or update a resource policy allowing other AWS services to put log events to this account",
+    "service_name": "Amazon CloudWatch Logs",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "mediastore:DeleteContainerPolicy": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to delete the access policy of a container",
+    "service_name": "AWS Elemental MediaStore",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "mediastore:PutContainerPolicy": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to create or replace the access policy of a container",
+    "service_name": "AWS Elemental MediaStore",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "opsworks:SetPermission": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to specify a user's permissions",
+    "service_name": "AWS OpsWorks",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "opsworks:UpdateUserProfile": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to update a specified user profile",
+    "service_name": "AWS OpsWorks",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "quicksight:CreateAdmin": {
+    "access_level": "Write",
+    "description": "Grants permission to provision Amazon QuickSight administrators, authors, and readers",
+    "service_name": "Amazon QuickSight",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "quicksight:CreateGroup": {
+    "access_level": "Write",
+    "description": "Grants permission to create a QuickSight group",
+    "service_name": "Amazon QuickSight",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "quicksight:CreateGroupMembership": {
+    "access_level": "Write",
+    "description": "Grants permission to add a QuickSight user to a QuickSight group",
+    "service_name": "Amazon QuickSight",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "quicksight:CreateIAMPolicyAssignment": {
+    "access_level": "Write",
+    "description": "Grants permission to create an assignment with one specified IAM Policy ARN that will be assigned to specified groups or users of QuickSight",
+    "service_name": "Amazon QuickSight",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "quicksight:CreateUser": {
+    "access_level": "Write",
+    "description": "Grants permission to provision Amazon QuickSight authors and readers",
+    "service_name": "Amazon QuickSight",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "quicksight:DeleteGroup": {
+    "access_level": "Write",
+    "description": "Grants permission to remove a user group from QuickSight",
+    "service_name": "Amazon QuickSight",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "quicksight:DeleteGroupMembership": {
+    "access_level": "Write",
+    "description": "Grants permission to remove a user from a group so that he/she is no longer a member of the group",
+    "service_name": "Amazon QuickSight",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "quicksight:DeleteIAMPolicyAssignment": {
+    "access_level": "Write",
+    "description": "Grants permission to update an existing assignment",
+    "service_name": "Amazon QuickSight",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "quicksight:DeleteUser": {
+    "access_level": "Write",
+    "description": "Grants permission to delete a QuickSight user, given the user name",
+    "service_name": "Amazon QuickSight",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "quicksight:DeleteUserByPrincipalId": {
+    "access_level": "Write",
+    "description": "Grants permission to deletes a user identified by its principal ID",
+    "service_name": "Amazon QuickSight",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "quicksight:RegisterUser": {
+    "access_level": "Write",
+    "description": "Grants permission to create a QuickSight user, whose identity is associated with the IAM identity/role specified in the request",
+    "service_name": "Amazon QuickSight",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "quicksight:UpdateDashboardPermissions": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to update permissions for a QuickSight Dashboard",
+    "service_name": "Amazon QuickSight",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "quicksight:UpdateGroup": {
+    "access_level": "Write",
+    "description": "Grants permission to change group description",
+    "service_name": "Amazon QuickSight",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "quicksight:UpdateIAMPolicyAssignment": {
+    "access_level": "Write",
+    "description": "Grants permission to update an existing assignment",
+    "service_name": "Amazon QuickSight",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "quicksight:UpdateTemplatePermissions": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to update permissions for a template",
+    "service_name": "Amazon QuickSight",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "quicksight:UpdateUser": {
+    "access_level": "Write",
+    "description": "Grants permission to update an Amazon QuickSight user",
+    "service_name": "Amazon QuickSight",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "ram:AcceptResourceShareInvitation": {
+    "access_level": "Write",
+    "description": "Grants permission to accept the specified resource share invitation",
+    "service_name": "AWS Resource Access Manager (RAM)",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "ram:AssociateResourceShare": {
+    "access_level": "Write",
+    "description": "Grants permission to associate resource(s) and/or principal(s) to a resource share",
+    "service_name": "AWS Resource Access Manager (RAM)",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "ram:CreateResourceShare": {
+    "access_level": "Write",
+    "description": "Grants permission to create a resource share with provided resource(s) and/or principal(s)",
+    "service_name": "AWS Resource Access Manager (RAM)",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "ram:DeleteResourceShare": {
+    "access_level": "Write",
+    "description": "Grants permission to delete resource share",
+    "service_name": "AWS Resource Access Manager (RAM)",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "ram:DisassociateResourceShare": {
+    "access_level": "Write",
+    "description": "Grants permission to disassociate resource(s) and/or principal(s) from a resource share",
+    "service_name": "AWS Resource Access Manager (RAM)",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "ram:EnableSharingWithAwsOrganization": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to access customer's organization and create a SLR in the customer's account",
+    "service_name": "AWS Resource Access Manager (RAM)",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "ram:RejectResourceShareInvitation": {
+    "access_level": "Write",
+    "description": "Grants permission to reject the specified resource share invitation",
+    "service_name": "AWS Resource Access Manager (RAM)",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "ram:UpdateResourceShare": {
+    "access_level": "Write",
+    "description": "Grants permission to update attributes of the resource share",
+    "service_name": "AWS Resource Access Manager (RAM)",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "rds:AuthorizeDBSecurityGroupIngress": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to enable ingress to a DBSecurityGroup using one of two forms of authorization",
+    "service_name": "Amazon RDS, Neptune & DocumentDB",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "redshift:AuthorizeSnapshotAccess": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to the specified AWS account to restore a snapshot",
+    "service_name": "Amazon Redshift",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "redshift:CreateClusterUser": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to automatically create the specified Amazon Redshift user if it does not exist",
+    "service_name": "Amazon Redshift",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "redshift:CreateSnapshotCopyGrant": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to create a snapshot copy grant and encrypt copied snapshots in a destination AWS Region",
+    "service_name": "Amazon Redshift",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "redshift:JoinGroup": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to join the specified Amazon Redshift group",
+    "service_name": "Amazon Redshift",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "redshift:ModifyClusterIamRoles": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to modify the list of AWS Identity and Access Management (IAM) roles that can be used by a cluster to access other AWS services",
+    "service_name": "Amazon Redshift",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "redshift:RevokeSnapshotAccess": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to revoke access from the specified AWS account to restore a snapshot",
+    "service_name": "Amazon Redshift",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "route53resolver:PutResolverRulePolicy": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to specify an AWS account that you want to share rules with, the Resolver rules that you want to share, and the operations that you want the account to be able to perform on those rules",
+    "service_name": "Amazon Route 53 Resolver",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "s3:BypassGovernanceRetention": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to allow circumvention of governance-mode object retention settings",
+    "service_name": "Amazon S3",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "s3:DeleteAccessPointPolicy": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to delete the policy on a specified access point",
+    "service_name": "Amazon S3",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "s3:DeleteBucketPolicy": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to delete the policy on a specified bucket",
+    "service_name": "Amazon S3",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "s3:ObjectOwnerOverrideToBucketOwner": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to change replica ownership",
+    "service_name": "Amazon S3",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "s3:PutAccessPointPolicy": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to associate an access policy with a specified access point",
+    "service_name": "Amazon S3",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "s3:PutAccountPublicAccessBlock": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to create or modify the PublicAccessBlock configuration for an AWS account",
+    "service_name": "Amazon S3",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "s3:PutBucketAcl": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to set the permissions on an existing bucket using access control lists (ACLs)",
+    "service_name": "Amazon S3",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "s3:PutBucketPolicy": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to add or replace a bucket policy on a bucket",
+    "service_name": "Amazon S3",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "s3:PutBucketPublicAccessBlock": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to create or modify the PublicAccessBlock configuration for a specific Amazon S3 bucket",
+    "service_name": "Amazon S3",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "s3:PutObjectAcl": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to set the access control list (ACL) permissions for new or existing objects in an S3 bucket",
+    "service_name": "Amazon S3",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "s3:PutObjectVersionAcl": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to use the acl subresource to set the access control list (ACL) permissions for an object that already exists in a bucket",
+    "service_name": "Amazon S3",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "secretsmanager:DeleteResourcePolicy": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to delete the resource policy attached to a secret",
+    "service_name": "AWS Secrets Manager",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "secretsmanager:PutResourcePolicy": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to attach a resource policy to a secret",
+    "service_name": "AWS Secrets Manager",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "secretsmanager:ValidateResourcePolicy": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to validate a resource policy before attaching policy",
+    "service_name": "AWS Secrets Manager",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "servicecatalog:CreatePortfolioShare": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to share a portfolio you own with another AWS account",
+    "service_name": "AWS Service Catalog",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "servicecatalog:DeletePortfolioShare": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to unshare a portfolio you own from an AWS account you previously shared the portfolio with",
+    "service_name": "AWS Service Catalog",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "sns:AddPermission": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to add a statement to a topic's access control policy, granting access for the specified AWS accounts to the specified actions",
+    "service_name": "Amazon SNS",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "sns:CreateTopic": {
+    "access_level": "Write",
+    "description": "Grants permission to create a topic to which notifications can be published",
+    "service_name": "Amazon SNS",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "sns:RemovePermission": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to remove a statement from a topic's access control policy",
+    "service_name": "Amazon SNS",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "sns:SetTopicAttributes": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to allow a topic owner to set an attribute of the topic to a new value",
+    "service_name": "Amazon SNS",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "sqs:AddPermission": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to a queue for a specific principal",
+    "service_name": "Amazon SQS",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "sqs:CreateQueue": {
+    "access_level": "Write",
+    "description": "Grants permission to create a new queue, or returns the URL of an existing one",
+    "service_name": "Amazon SQS",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "sqs:RemovePermission": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to revoke any permissions in the queue policy that matches the specified Label parameter",
+    "service_name": "Amazon SQS",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "sqs:SetQueueAttributes": {
+    "access_level": "Write",
+    "description": "Grants permission to set the value of one or more queue attributes",
+    "service_name": "Amazon SQS",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "ssm:ModifyDocumentPermission": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to share a custom SSM document publicly or privately with specified AWS accounts",
+    "service_name": "AWS Systems Manager",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "sso-directory:AddMemberToGroup": {
+    "access_level": "Write",
+    "description": "Grants permission to add a member to a group in the directory that AWS IAM Identity Center provides by default",
+    "service_name": "AWS IAM Identity Center (successor to AWS Single Sign-On) directory",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "sso-directory:CreateAlias": {
+    "access_level": "Write",
+    "description": "Grants permission to create an alias for the directory that AWS IAM Identity Center provides by default",
+    "service_name": "AWS IAM Identity Center (successor to AWS Single Sign-On) directory",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "sso-directory:CreateGroup": {
+    "access_level": "Write",
+    "description": "Grants permission to create a group in the directory that AWS IAM Identity Center provides by default",
+    "service_name": "AWS IAM Identity Center (successor to AWS Single Sign-On) directory",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "sso-directory:CreateUser": {
+    "access_level": "Write",
+    "description": "Grants permission to create a user in the directory that AWS IAM Identity Center provides by default",
+    "service_name": "AWS IAM Identity Center (successor to AWS Single Sign-On) directory",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "sso-directory:DeleteGroup": {
+    "access_level": "Write",
+    "description": "Grants permission to delete a group from the directory that AWS IAM Identity Center provides by default",
+    "service_name": "AWS IAM Identity Center (successor to AWS Single Sign-On) directory",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "sso-directory:DeleteUser": {
+    "access_level": "Write",
+    "description": "Grants permission to delete a user from the directory that AWS IAM Identity Center provides by default",
+    "service_name": "AWS IAM Identity Center (successor to AWS Single Sign-On) directory",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "sso-directory:DisableUser": {
+    "access_level": "Write",
+    "description": "Grants permission to deactivate a user in the directory that AWS IAM Identity Center provides by default",
+    "service_name": "AWS IAM Identity Center (successor to AWS Single Sign-On) directory",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "sso-directory:EnableUser": {
+    "access_level": "Write",
+    "description": "Grants permission to activate user in the directory that AWS IAM Identity Center provides by default",
+    "service_name": "AWS IAM Identity Center (successor to AWS Single Sign-On) directory",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "sso-directory:RemoveMemberFromGroup": {
+    "access_level": "Write",
+    "description": "Grants permission to remove a member that is part of a group in the directory that AWS IAM Identity Center provides by default",
+    "service_name": "AWS IAM Identity Center (successor to AWS Single Sign-On) directory",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "sso-directory:UpdateGroup": {
+    "access_level": "Write",
+    "description": "Grants permission to update information about a group in the directory that AWS IAM Identity Center provides by default",
+    "service_name": "AWS IAM Identity Center (successor to AWS Single Sign-On) directory",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "sso-directory:UpdatePassword": {
+    "access_level": "Write",
+    "description": "Grants permission to update a password by sending password reset link via email or generating one time password for a user in the directory that AWS IAM Identity Center provides by default",
+    "service_name": "AWS IAM Identity Center (successor to AWS Single Sign-On) directory",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "sso-directory:UpdateUser": {
+    "access_level": "Write",
+    "description": "Grants permission to update user information in the directory that AWS IAM Identity Center provides by default",
+    "service_name": "AWS IAM Identity Center (successor to AWS Single Sign-On) directory",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "sso-directory:VerifyEmail": {
+    "access_level": "Write",
+    "description": "Grants permission to verify an email address of an User",
+    "service_name": "AWS IAM Identity Center (successor to AWS Single Sign-On) directory",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "sso:AssociateDirectory": {
+    "access_level": "Write",
+    "description": "Grants permission to connect a directory to be used by AWS IAM Identity Center",
+    "service_name": "AWS IAM Identity Center (successor to AWS Single Sign-On)",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "sso:AssociateProfile": {
+    "access_level": "Write",
+    "description": "Grants permission to create an association between a directory user or group and a profile",
+    "service_name": "AWS IAM Identity Center (successor to AWS Single Sign-On)",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "sso:CreateApplicationInstance": {
+    "access_level": "Write",
+    "description": "Grants permission to add an application instance to AWS IAM Identity Center",
+    "service_name": "AWS IAM Identity Center (successor to AWS Single Sign-On)",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "sso:CreateApplicationInstanceCertificate": {
+    "access_level": "Write",
+    "description": "Grants permission to add a new certificate for an application instance",
+    "service_name": "AWS IAM Identity Center (successor to AWS Single Sign-On)",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "sso:CreatePermissionSet": {
+    "access_level": "Write",
+    "description": "Grants permission to create a permission set",
+    "service_name": "AWS IAM Identity Center (successor to AWS Single Sign-On)",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "sso:CreateProfile": {
+    "access_level": "Write",
+    "description": "Grants permission to create a profile for an application instance",
+    "service_name": "AWS IAM Identity Center (successor to AWS Single Sign-On)",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "sso:CreateTrust": {
+    "access_level": "Write",
+    "description": "Grants permission to create a federation trust in a target account",
+    "service_name": "AWS IAM Identity Center (successor to AWS Single Sign-On)",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "sso:DeleteApplicationInstance": {
+    "access_level": "Write",
+    "description": "Grants permission to delete the application instance",
+    "service_name": "AWS IAM Identity Center (successor to AWS Single Sign-On)",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "sso:DeleteApplicationInstanceCertificate": {
+    "access_level": "Write",
+    "description": "Grants permission to delete an inactive or expired certificate from the application instance",
+    "service_name": "AWS IAM Identity Center (successor to AWS Single Sign-On)",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "sso:DeletePermissionSet": {
+    "access_level": "Write",
+    "description": "Grants permission to delete a permission set",
+    "service_name": "AWS IAM Identity Center (successor to AWS Single Sign-On)",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "sso:DeletePermissionsPolicy": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to delete the permission policy associated with a permission set",
+    "service_name": "AWS IAM Identity Center (successor to AWS Single Sign-On)",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "sso:DeleteProfile": {
+    "access_level": "Write",
+    "description": "Grants permission to delete the profile for an application instance",
+    "service_name": "AWS IAM Identity Center (successor to AWS Single Sign-On)",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "sso:DisassociateDirectory": {
+    "access_level": "Write",
+    "description": "Grants permission to disassociate a directory to be used by AWS IAM Identity Center",
+    "service_name": "AWS IAM Identity Center (successor to AWS Single Sign-On)",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "sso:DisassociateProfile": {
+    "access_level": "Write",
+    "description": "Grants permission to disassociate a directory user or group from a profile",
+    "service_name": "AWS IAM Identity Center (successor to AWS Single Sign-On)",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "sso:ImportApplicationInstanceServiceProviderMetadata": {
+    "access_level": "Write",
+    "description": "Grants permission to update the application instance by uploading an application SAML metadata file provided by the service provider",
+    "service_name": "AWS IAM Identity Center (successor to AWS Single Sign-On)",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "sso:PutPermissionsPolicy": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to add a policy to a permission set",
+    "service_name": "AWS IAM Identity Center (successor to AWS Single Sign-On)",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "sso:StartSSO": {
+    "access_level": "Write",
+    "description": "Grants permission to initialize AWS IAM Identity Center",
+    "service_name": "AWS IAM Identity Center (successor to AWS Single Sign-On)",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "sso:UpdateApplicationInstanceActiveCertificate": {
+    "access_level": "Write",
+    "description": "Grants permission to set a certificate as the active one for this application instance",
+    "service_name": "AWS IAM Identity Center (successor to AWS Single Sign-On)",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "sso:UpdateApplicationInstanceDisplayData": {
+    "access_level": "Write",
+    "description": "Grants permission to update display data of an application instance",
+    "service_name": "AWS IAM Identity Center (successor to AWS Single Sign-On)",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "sso:UpdateApplicationInstanceResponseConfiguration": {
+    "access_level": "Write",
+    "description": "Grants permission to update federation response configuration for the application instance",
+    "service_name": "AWS IAM Identity Center (successor to AWS Single Sign-On)",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "sso:UpdateApplicationInstanceResponseSchemaConfiguration": {
+    "access_level": "Write",
+    "description": "Grants permission to update federation response schema configuration for the application instance",
+    "service_name": "AWS IAM Identity Center (successor to AWS Single Sign-On)",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "sso:UpdateApplicationInstanceSecurityConfiguration": {
+    "access_level": "Write",
+    "description": "Grants permission to update security details for the application instance",
+    "service_name": "AWS IAM Identity Center (successor to AWS Single Sign-On)",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "sso:UpdateApplicationInstanceServiceProviderConfiguration": {
+    "access_level": "Write",
+    "description": "Grants permission to update service provider related configuration for the application instance",
+    "service_name": "AWS IAM Identity Center (successor to AWS Single Sign-On)",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "sso:UpdateApplicationInstanceStatus": {
+    "access_level": "Write",
+    "description": "Grants permission to update the status of an application instance",
+    "service_name": "AWS IAM Identity Center (successor to AWS Single Sign-On)",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "sso:UpdateDirectoryAssociation": {
+    "access_level": "Write",
+    "description": "Grants permission to update the user attribute mappings for your connected directory",
+    "service_name": "AWS IAM Identity Center (successor to AWS Single Sign-On)",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "sso:UpdatePermissionSet": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to update the permission set",
+    "service_name": "AWS IAM Identity Center (successor to AWS Single Sign-On)",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "sso:UpdateProfile": {
+    "access_level": "Write",
+    "description": "Grants permission to update the profile for an application instance",
+    "service_name": "AWS IAM Identity Center (successor to AWS Single Sign-On)",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "sso:UpdateSSOConfiguration": {
+    "access_level": "Write",
+    "description": "Grants permission to update the configuration for the current SSO instance",
+    "service_name": "AWS IAM Identity Center (successor to AWS Single Sign-On)",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "sso:UpdateTrust": {
+    "access_level": "Write",
+    "description": "Grants permission to update the federation trust in a target account",
+    "service_name": "AWS IAM Identity Center (successor to AWS Single Sign-On)",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "storagegateway:DeleteChapCredentials": {
+    "access_level": "Write",
+    "description": "Grants permission to delete Challenge-Handshake Authentication Protocol (CHAP) credentials for a specified iSCSI target and initiator pair",
+    "service_name": "AWS Storage Gateway",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "storagegateway:SetLocalConsolePassword": {
+    "access_level": "Write",
+    "description": "Grants permission to set the password for your VM local console",
+    "service_name": "AWS Storage Gateway",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "storagegateway:SetSMBGuestPassword": {
+    "access_level": "Write",
+    "description": "Grants permission to set the password for SMB Guest user",
+    "service_name": "AWS Storage Gateway",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "storagegateway:UpdateChapCredentials": {
+    "access_level": "Write",
+    "description": "Grants permission to update the Challenge-Handshake Authentication Protocol (CHAP) credentials for a specified iSCSI target",
+    "service_name": "AWS Storage Gateway",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "waf-regional:DeletePermissionPolicy": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to delete an IAM policy from a rule group",
+    "service_name": "AWS WAF Regional",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "waf-regional:PutPermissionPolicy": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to attach an IAM policy to a specified rule group, to support rule group sharing between accounts",
+    "service_name": "AWS WAF Regional",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "waf:DeletePermissionPolicy": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to delete an IAM policy from a rule group",
+    "service_name": "AWS WAF",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "waf:PutPermissionPolicy": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to attach an IAM policy to a rule group, to share the rule group between accounts",
+    "service_name": "AWS WAF",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "wafv2:CreateWebACL": {
+    "access_level": "Write",
+    "description": "Grants permission to create a WebACL",
+    "service_name": "AWS WAF V2",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "wafv2:DeletePermissionPolicy": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to delete the PermissionPolicy on a RuleGroup",
+    "service_name": "AWS WAF V2",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "wafv2:DeleteWebACL": {
+    "access_level": "Write",
+    "description": "Grants permission to delete a WebACL",
+    "service_name": "AWS WAF V2",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "wafv2:PutPermissionPolicy": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to attach an IAM policy to a resource, used to share rule groups between accounts",
+    "service_name": "AWS WAF V2",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "wafv2:UpdateWebACL": {
+    "access_level": "Write",
+    "description": "Grants permission to update a WebACL",
+    "service_name": "AWS WAF V2",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "worklink:UpdateDevicePolicyConfiguration": {
+    "access_level": "Write",
+    "description": "Grants permission to update the device policy configuration for an Amazon WorkLink fleet",
+    "service_name": "Amazon WorkLink",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "workmail:ResetPassword": {
+    "access_level": "Write",
+    "description": "Grants permission to allow the administrator to reset the password for a user",
+    "service_name": "Amazon WorkMail",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "workmail:ResetUserPassword": {
+    "access_level": "Write",
+    "description": "Grants permission to reset the password for a user's account",
+    "service_name": "Amazon WorkMail",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  },
+  "xray:PutEncryptionConfig": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to update the encryption configuration for X-Ray data",
+    "service_name": "AWS X-Ray",
+    "risk_category": [
+      "ResourceExposure"
+    ]
+  }
+}
