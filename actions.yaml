@@ -47,8 +47,11 @@ CredentialExposure:
   - sts:GetSessionToken
   - waf-regional:GetChangeToken
   - waf:GetChangeToken
+
 DataAccess:
   Actions:
+  - aoss:APIAccessAll
+  - aoss:DashboardsAccessAll
   - appsync:GetDataSource
   - appsync:GetFunction
   - athena:GetQueryExecution
@@ -195,6 +198,7 @@ DataAccess:
   - workmail:ListGroupMembers
   - workmail:ListGroups
   - workmail:ListUsers
+
 PrivEsc:
   Actions:
   - codestar:AssociateTeamMember
