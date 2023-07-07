@@ -388,6 +388,8 @@
       "Sid": "DenyDataAccess",
       "Effect": "Deny",
       "Action": [
+        "aoss:APIAccessAll",
+        "aoss:DashboardsAccessAll",
         "appsync:GetDataSource",
         "appsync:GetFunction",
         "athena:GetQueryExecution",

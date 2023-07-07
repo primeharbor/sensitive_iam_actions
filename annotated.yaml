@@ -170,7 +170,7 @@ CredentialExposure:
       - CredentialExposure
       - PrivEsc
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:CreateLoginProfile:
       access_level: Write
@@ -179,7 +179,7 @@ CredentialExposure:
       - CredentialExposure
       - PrivEsc
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:CreateServiceSpecificCredential:
       access_level: Write
@@ -187,7 +187,7 @@ CredentialExposure:
       risk_category:
       - CredentialExposure
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:ResetServiceSpecificCredential:
       access_level: Write
@@ -195,7 +195,7 @@ CredentialExposure:
       risk_category:
       - CredentialExposure
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:UpdateAccessKey:
       access_level: Write
@@ -203,7 +203,7 @@ CredentialExposure:
       risk_category:
       - CredentialExposure
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - lightsail:DownloadDefaultKeyPair:
       access_level: Write
@@ -343,6 +343,20 @@ CredentialExposure:
 
 DataAccess:
   Actions:
+
+  - aoss:APIAccessAll:
+      access_level: Write
+      description: Grant permission to all the supported Opensearch APIs
+      risk_category:
+      - DataAccess
+      service_name: Amazon OpenSearch Serverless
+
+  - aoss:DashboardsAccessAll:
+      access_level: Write
+      description: Grants permission to Opensearch Serverless Dashboards
+      risk_category:
+      - DataAccess
+      service_name: Amazon OpenSearch Serverless
 
   - appsync:GetDataSource:
       access_level: Read
@@ -1313,14 +1327,14 @@ DataAccess:
 
   - support:DescribeAttachment:
       access_level: Read
-      description: Returns the description for an attachment.
+      description: Grants permission to describe attachment detail
       risk_category:
       - DataAccess
       service_name: AWS Support
 
   - support:DescribeCommunications:
       access_level: Read
-      description: Returns the communications and attachments for one or more AWS Support cases.
+      description: Grants permission to list the communications and attachments for one or more AWS Support cases
       risk_category:
       - DataAccess
       service_name: AWS Support
@@ -1399,7 +1413,7 @@ PrivEsc:
       risk_category:
       - PrivEsc
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:AttachGroupPolicy:
       access_level: Permissions management
@@ -1407,7 +1421,7 @@ PrivEsc:
       risk_category:
       - PrivEsc
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:AttachRolePolicy:
       access_level: Permissions management
@@ -1415,7 +1429,7 @@ PrivEsc:
       risk_category:
       - PrivEsc
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:AttachUserPolicy:
       access_level: Permissions management
@@ -1423,7 +1437,7 @@ PrivEsc:
       risk_category:
       - PrivEsc
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:CreateAccessKey:
       access_level: Write
@@ -1432,7 +1446,7 @@ PrivEsc:
       - CredentialExposure
       - PrivEsc
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:CreateLoginProfile:
       access_level: Write
@@ -1441,7 +1455,7 @@ PrivEsc:
       - CredentialExposure
       - PrivEsc
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:CreatePolicyVersion:
       access_level: Permissions management
@@ -1449,7 +1463,7 @@ PrivEsc:
       risk_category:
       - PrivEsc
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:CreateServiceLinkedRole:
       access_level: Write
@@ -1457,7 +1471,7 @@ PrivEsc:
       risk_category:
       - PrivEsc
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:CreateVirtualMFADevice:
       access_level: Write
@@ -1465,7 +1479,7 @@ PrivEsc:
       risk_category:
       - PrivEsc
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:EnableMFADevice:
       access_level: Write
@@ -1473,7 +1487,7 @@ PrivEsc:
       risk_category:
       - PrivEsc
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:PassRole:
       access_level: Write
@@ -1481,7 +1495,7 @@ PrivEsc:
       risk_category:
       - PrivEsc
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:PutGroupPolicy:
       access_level: Permissions management
@@ -1489,7 +1503,7 @@ PrivEsc:
       risk_category:
       - PrivEsc
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:PutRolePolicy:
       access_level: Permissions management
@@ -1497,7 +1511,7 @@ PrivEsc:
       risk_category:
       - PrivEsc
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:PutUserPolicy:
       access_level: Permissions management
@@ -1505,7 +1519,7 @@ PrivEsc:
       risk_category:
       - PrivEsc
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:ResyncMFADevice:
       access_level: Write
@@ -1513,7 +1527,7 @@ PrivEsc:
       risk_category:
       - PrivEsc
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:SetDefaultPolicyVersion:
       access_level: Permissions management
@@ -1521,7 +1535,7 @@ PrivEsc:
       risk_category:
       - PrivEsc
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:UpdateAssumeRolePolicy:
       access_level: Permissions management
@@ -1529,7 +1543,7 @@ PrivEsc:
       risk_category:
       - PrivEsc
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:UpdateLoginProfile:
       access_level: Write
@@ -1537,7 +1551,7 @@ PrivEsc:
       risk_category:
       - PrivEsc
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
 ResourceExposure:
   Actions:
@@ -1983,14 +1997,14 @@ ResourceExposure:
       description: Grants permission to add a new client ID (audience) to the list of registered IDs for the specified IAM OpenID Connect (OIDC) provider resource
       risk_category:
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:AddRoleToInstanceProfile:
       access_level: Write
       description: Grants permission to add an IAM role to the specified instance profile
       risk_category:
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:AddUserToGroup:
       access_level: Write
@@ -1998,7 +2012,7 @@ ResourceExposure:
       risk_category:
       - PrivEsc
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:AttachGroupPolicy:
       access_level: Permissions management
@@ -2006,7 +2020,7 @@ ResourceExposure:
       risk_category:
       - PrivEsc
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:AttachRolePolicy:
       access_level: Permissions management
@@ -2014,7 +2028,7 @@ ResourceExposure:
       risk_category:
       - PrivEsc
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:AttachUserPolicy:
       access_level: Permissions management
@@ -2022,14 +2036,14 @@ ResourceExposure:
       risk_category:
       - PrivEsc
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:ChangePassword:
       access_level: Write
-      description: Grants permission for an IAM user to change their own password
+      description: Grants permission to an IAM user to change their own password
       risk_category:
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:CreateAccessKey:
       access_level: Write
@@ -2038,28 +2052,28 @@ ResourceExposure:
       - CredentialExposure
       - PrivEsc
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:CreateAccountAlias:
       access_level: Write
       description: Grants permission to create an alias for your AWS account
       risk_category:
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:CreateGroup:
       access_level: Write
       description: Grants permission to create a new group
       risk_category:
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:CreateInstanceProfile:
       access_level: Write
       description: Grants permission to create a new instance profile
       risk_category:
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:CreateLoginProfile:
       access_level: Write
@@ -2068,21 +2082,21 @@ ResourceExposure:
       - CredentialExposure
       - PrivEsc
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:CreateOpenIDConnectProvider:
       access_level: Write
       description: Grants permission to create an IAM resource that describes an identity provider (IdP) that supports OpenID Connect (OIDC)
       risk_category:
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:CreatePolicy:
       access_level: Permissions management
       description: Grants permission to create a new managed policy
       risk_category:
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:CreatePolicyVersion:
       access_level: Permissions management
@@ -2090,21 +2104,21 @@ ResourceExposure:
       risk_category:
       - PrivEsc
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:CreateRole:
       access_level: Write
       description: Grants permission to create a new role
       risk_category:
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:CreateSAMLProvider:
       access_level: Write
       description: Grants permission to create an IAM resource that describes an identity provider (IdP) that supports SAML 2.0
       risk_category:
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:CreateServiceLinkedRole:
       access_level: Write
@@ -2112,7 +2126,7 @@ ResourceExposure:
       risk_category:
       - PrivEsc
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:CreateServiceSpecificCredential:
       access_level: Write
@@ -2120,14 +2134,14 @@ ResourceExposure:
       risk_category:
       - CredentialExposure
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:CreateUser:
       access_level: Write
       description: Grants permission to create a new IAM user
       risk_category:
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:CreateVirtualMFADevice:
       access_level: Write
@@ -2135,196 +2149,196 @@ ResourceExposure:
       risk_category:
       - PrivEsc
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:DeactivateMFADevice:
       access_level: Write
       description: Grants permission to deactivate the specified MFA device and remove its association with the IAM user for which it was originally enabled
       risk_category:
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:DeleteAccessKey:
       access_level: Write
       description: Grants permission to delete the access key pair that is associated with the specified IAM user
       risk_category:
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:DeleteAccountAlias:
       access_level: Write
       description: Grants permission to delete the specified AWS account alias
       risk_category:
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:DeleteAccountPasswordPolicy:
       access_level: Permissions management
       description: Grants permission to delete the password policy for the AWS account
       risk_category:
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:DeleteGroup:
       access_level: Write
       description: Grants permission to delete the specified IAM group
       risk_category:
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:DeleteGroupPolicy:
       access_level: Permissions management
       description: Grants permission to delete the specified inline policy from its group
       risk_category:
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:DeleteInstanceProfile:
       access_level: Write
       description: Grants permission to delete the specified instance profile
       risk_category:
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:DeleteLoginProfile:
       access_level: Write
       description: Grants permission to delete the password for the specified IAM user
       risk_category:
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:DeleteOpenIDConnectProvider:
       access_level: Write
       description: Grants permission to delete an OpenID Connect identity provider (IdP) resource object in IAM
       risk_category:
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:DeletePolicy:
       access_level: Permissions management
       description: Grants permission to delete the specified managed policy and remove it from any IAM entities (users, groups, or roles) to which it is attached
       risk_category:
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:DeletePolicyVersion:
       access_level: Permissions management
       description: Grants permission to delete a version from the specified managed policy
       risk_category:
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:DeleteRole:
       access_level: Write
       description: Grants permission to delete the specified role
       risk_category:
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:DeleteRolePermissionsBoundary:
       access_level: Permissions management
       description: Grants permission to remove the permissions boundary from a role
       risk_category:
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:DeleteRolePolicy:
       access_level: Permissions management
       description: Grants permission to delete the specified inline policy from the specified role
       risk_category:
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:DeleteSAMLProvider:
       access_level: Write
       description: Grants permission to delete a SAML provider resource in IAM
       risk_category:
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:DeleteServerCertificate:
       access_level: Write
       description: Grants permission to delete the specified server certificate
       risk_category:
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:DeleteServiceLinkedRole:
       access_level: Write
       description: Grants permission to delete an IAM role that is linked to a specific AWS service, if the service is no longer using it
       risk_category:
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:DeleteServiceSpecificCredential:
       access_level: Write
       description: Grants permission to delete the specified service-specific credential for an IAM user
       risk_category:
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:DeleteSigningCertificate:
       access_level: Write
       description: Grants permission to delete a signing certificate that is associated with the specified IAM user
       risk_category:
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:DeleteSSHPublicKey:
       access_level: Write
       description: Grants permission to delete the specified SSH public key
       risk_category:
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:DeleteUser:
       access_level: Write
       description: Grants permission to delete the specified IAM user
       risk_category:
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:DeleteUserPermissionsBoundary:
       access_level: Permissions management
       description: Grants permission to remove the permissions boundary from the specified IAM user
       risk_category:
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:DeleteUserPolicy:
       access_level: Permissions management
       description: Grants permission to delete the specified inline policy from an IAM user
       risk_category:
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:DeleteVirtualMFADevice:
       access_level: Write
       description: Grants permission to delete a virtual MFA device
       risk_category:
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:DetachGroupPolicy:
       access_level: Permissions management
       description: Grants permission to detach a managed policy from the specified IAM group
       risk_category:
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:DetachRolePolicy:
       access_level: Permissions management
       description: Grants permission to detach a managed policy from the specified role
       risk_category:
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:DetachUserPolicy:
       access_level: Permissions management
       description: Grants permission to detach a managed policy from the specified IAM user
       risk_category:
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:EnableMFADevice:
       access_level: Write
@@ -2332,7 +2346,7 @@ ResourceExposure:
       risk_category:
       - PrivEsc
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:PassRole:
       access_level: Write
@@ -2340,7 +2354,7 @@ ResourceExposure:
       risk_category:
       - PrivEsc
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:PutGroupPolicy:
       access_level: Permissions management
@@ -2348,14 +2362,14 @@ ResourceExposure:
       risk_category:
       - PrivEsc
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:PutRolePermissionsBoundary:
       access_level: Permissions management
       description: Grants permission to set a managed policy as a permissions boundary for a role
       risk_category:
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:PutRolePolicy:
       access_level: Permissions management
@@ -2363,14 +2377,14 @@ ResourceExposure:
       risk_category:
       - PrivEsc
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:PutUserPermissionsBoundary:
       access_level: Permissions management
       description: Grants permission to set a managed policy as a permissions boundary for an IAM user
       risk_category:
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:PutUserPolicy:
       access_level: Permissions management
@@ -2378,28 +2392,28 @@ ResourceExposure:
       risk_category:
       - PrivEsc
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:RemoveClientIDFromOpenIDConnectProvider:
       access_level: Write
       description: Grants permission to remove the client ID (audience) from the list of client IDs in the specified IAM OpenID Connect (OIDC) provider resource
       risk_category:
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:RemoveRoleFromInstanceProfile:
       access_level: Write
       description: Grants permission to remove an IAM role from the specified EC2 instance profile
       risk_category:
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:RemoveUserFromGroup:
       access_level: Write
       description: Grants permission to remove an IAM user from the specified group
       risk_category:
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:ResetServiceSpecificCredential:
       access_level: Write
@@ -2407,7 +2421,7 @@ ResourceExposure:
       risk_category:
       - CredentialExposure
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:ResyncMFADevice:
       access_level: Write
@@ -2415,7 +2429,7 @@ ResourceExposure:
       risk_category:
       - PrivEsc
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:SetDefaultPolicyVersion:
       access_level: Permissions management
@@ -2423,14 +2437,14 @@ ResourceExposure:
       risk_category:
       - PrivEsc
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:SetSecurityTokenServicePreferences:
       access_level: Write
       description: Grants permission to set the STS global endpoint token version
       risk_category:
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:UpdateAccessKey:
       access_level: Write
@@ -2438,14 +2452,14 @@ ResourceExposure:
       risk_category:
       - CredentialExposure
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:UpdateAccountPasswordPolicy:
       access_level: Write
       description: Grants permission to update the password policy settings for the AWS account
       risk_category:
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:UpdateAssumeRolePolicy:
       access_level: Permissions management
@@ -2453,14 +2467,14 @@ ResourceExposure:
       risk_category:
       - PrivEsc
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:UpdateGroup:
       access_level: Write
       description: Grants permission to update the name or path of the specified IAM group
       risk_category:
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:UpdateLoginProfile:
       access_level: Write
@@ -2468,91 +2482,91 @@ ResourceExposure:
       risk_category:
       - PrivEsc
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:UpdateOpenIDConnectProviderThumbprint:
       access_level: Write
       description: Grants permission to update the entire list of server certificate thumbprints that are associated with an OpenID Connect (OIDC) provider resource
       risk_category:
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:UpdateRole:
       access_level: Write
       description: Grants permission to update the description or maximum session duration setting of a role
       risk_category:
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:UpdateRoleDescription:
       access_level: Write
       description: Grants permission to update only the description of a role
       risk_category:
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:UpdateSAMLProvider:
       access_level: Write
       description: Grants permission to update the metadata document for an existing SAML provider resource
       risk_category:
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:UpdateServerCertificate:
       access_level: Write
       description: Grants permission to update the name or the path of the specified server certificate stored in IAM
       risk_category:
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:UpdateServiceSpecificCredential:
       access_level: Write
       description: Grants permission to update the status of a service-specific credential to active or inactive for an IAM user
       risk_category:
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:UpdateSigningCertificate:
       access_level: Write
       description: Grants permission to update the status of the specified user signing certificate to active or disabled
       risk_category:
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:UpdateSSHPublicKey:
       access_level: Write
       description: Grants permission to update the status of an IAM user's SSH public key to active or inactive
       risk_category:
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:UpdateUser:
       access_level: Write
       description: Grants permission to update the name or the path of the specified IAM user
       risk_category:
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:UploadServerCertificate:
       access_level: Write
       description: Grants permission to upload a server certificate entity for the AWS account
       risk_category:
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:UploadSigningCertificate:
       access_level: Write
       description: Grants permission to upload an X.509 signing certificate and associate it with the specified IAM user
       risk_category:
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - iam:UploadSSHPublicKey:
       access_level: Write
       description: Grants permission to upload an SSH public key and associate it with the specified IAM user
       risk_category:
       - ResourceExposure
-      service_name: AWS Identity and Access Management
+      service_name: AWS Identity and Access Management (IAM)
 
   - imagebuilder:PutComponentPolicy:
       access_level: Permissions management
