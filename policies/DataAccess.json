@@ -118,6 +118,7 @@
         "logs:GetLogEvents",
         "logs:GetLogRecord",
         "logs:GetQueryResults",
+        "logs:Unmask",
         "macie2:GetFindings",
         "mediastore:GetObject",
         "qldb:GetBlock",

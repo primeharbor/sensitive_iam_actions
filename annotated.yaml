@@ -1136,6 +1136,13 @@ DataAccess:
       - DataAccess
       service_name: Amazon CloudWatch Logs
 
+  - logs:Unmask:
+      access_level: Read
+      description: Grants permission to fetch unmasked log events that have been redacted with a data protection policy
+      risk_category:
+      - DataAccess
+      service_name: Amazon CloudWatch Logs
+
   - macie2:GetFindings:
       access_level: Read
       description: Grants permission to retrieve the details of one or more findings
