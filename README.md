@@ -68,6 +68,7 @@ Several experts in the cloud security community have built tooling to wrangle th
 	* This repo leverages the [iam_definitions.json](https://github.com/iann0036/iam-dataset/blob/main/iam_definition.json) file to annotate the actions.
 	* The initial list of sensitive actions was sourced from [add_managed_policies.py](https://github.com/iann0036/iam-dataset/blob/main/add_managed_policies.py) which was sourced from Cloudsplaining.
 * [Monitor AWS Managed IAM Policies](https://github.com/zoph-io/MAMIP/) from [Victor GRENU](https://github.com/z0ph).
+* [AWS Service Authorization scrape](https://github.com/fluggo/aws-service-auth-reference) from [Brian Crowell](https://github.com/fluggo) is a JSON-formatted version of the AWS Service Authorization Reference packaged for use in Node.js and for querying directly from raw GitHub.
 
 ### Blog Posts & Articles
 * [AWS API calls that return credentials](https://gist.github.com/kmcquade/33860a617e651104d243c324ddf7992a) - [Kinnaird McQuade](https://github.com/kmcquade)
