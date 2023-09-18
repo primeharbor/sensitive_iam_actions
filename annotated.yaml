@@ -94,7 +94,7 @@ CredentialExposure:
 
   - cognito-idp:GetUserAttributeVerificationCode:
       access_level: Read
-      description: Gets the user attribute verification code for the specified attribute name
+      description: Grants permission to get the user attribute verification code for the specified attribute name
       risk_category:
       - CredentialExposure
       service_name: Amazon Cognito User Pools
@@ -119,6 +119,14 @@ CredentialExposure:
       risk_category:
       - CredentialExposure
       service_name: Amazon EC2
+
+  - ec2-instance-connect:SendSSHPublicKey:
+      access_level: Write
+      description: Grants permission to push an SSH public key to the specified EC2 instance to be used for standard SSH
+      risk_category:
+      - CredentialExposure
+      - PrivEsc
+      service_name: Amazon EC2 Instance Connect
 
   - ecr-public:GetAuthorizationToken:
       access_level: Read
@@ -857,7 +865,7 @@ DataAccess:
 
   - cognito-idp:GetDevice:
       access_level: Read
-      description: Gets the device
+      description: Grants permission to get the device
       risk_category:
       - DataAccess
       service_name: Amazon Cognito User Pools
@@ -871,7 +879,7 @@ DataAccess:
 
   - cognito-idp:GetUser:
       access_level: Read
-      description: Gets the user attributes and metadata for a user
+      description: Grants permission to get the user attributes and metadata for a user
       risk_category:
       - DataAccess
       service_name: Amazon Cognito User Pools
@@ -885,7 +893,7 @@ DataAccess:
 
   - cognito-idp:ListDevices:
       access_level: List
-      description: Lists the devices
+      description: Grants permission to list the devices
       risk_category:
       - DataAccess
       service_name: Amazon Cognito User Pools
@@ -1050,21 +1058,21 @@ DataAccess:
       description: Grants permission to read resource
       risk_category:
       - DataAccess
-      service_name: Amazon HealthLake
+      service_name: AWS HealthLake
 
   - healthlake:SearchWithGet:
       access_level: Read
       description: Grants permission to search resources with GET method
       risk_category:
       - DataAccess
-      service_name: Amazon HealthLake
+      service_name: AWS HealthLake
 
   - healthlake:SearchWithPost:
       access_level: Read
       description: Grants permission to search resources with POST method
       risk_category:
       - DataAccess
-      service_name: Amazon HealthLake
+      service_name: AWS HealthLake
 
   - kendra:Query:
       access_level: Read
@@ -1406,6 +1414,14 @@ PrivEsc:
       - PrivEsc
       - ResourceExposure
       service_name: AWS CodeStar
+
+  - ec2-instance-connect:SendSSHPublicKey:
+      access_level: Write
+      description: Grants permission to push an SSH public key to the specified EC2 instance to be used for standard SSH
+      risk_category:
+      - CredentialExposure
+      - PrivEsc
+      service_name: Amazon EC2 Instance Connect
 
   - glue:UpdateDevEndpoint:
       access_level: Write

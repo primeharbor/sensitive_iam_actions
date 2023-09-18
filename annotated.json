@@ -105,7 +105,7 @@
   },
   "cognito-idp:GetUserAttributeVerificationCode": {
     "access_level": "Read",
-    "description": "Gets the user attribute verification code for the specified attribute name",
+    "description": "Grants permission to get the user attribute verification code for the specified attribute name",
     "service_name": "Amazon Cognito User Pools",
     "risk_category": [
       "CredentialExposure"
@@ -133,6 +133,15 @@
     "service_name": "Amazon EC2",
     "risk_category": [
       "CredentialExposure"
+    ]
+  },
+  "ec2-instance-connect:SendSSHPublicKey": {
+    "access_level": "Write",
+    "description": "Grants permission to push an SSH public key to the specified EC2 instance to be used for standard SSH",
+    "service_name": "Amazon EC2 Instance Connect",
+    "risk_category": [
+      "CredentialExposure",
+      "PrivEsc"
     ]
   },
   "ecr-public:GetAuthorizationToken": {
@@ -972,7 +981,7 @@
   },
   "cognito-idp:GetDevice": {
     "access_level": "Read",
-    "description": "Gets the device",
+    "description": "Grants permission to get the device",
     "service_name": "Amazon Cognito User Pools",
     "risk_category": [
       "DataAccess"
@@ -988,7 +997,7 @@
   },
   "cognito-idp:GetUser": {
     "access_level": "Read",
-    "description": "Gets the user attributes and metadata for a user",
+    "description": "Grants permission to get the user attributes and metadata for a user",
     "service_name": "Amazon Cognito User Pools",
     "risk_category": [
       "DataAccess"
@@ -1004,7 +1013,7 @@
   },
   "cognito-idp:ListDevices": {
     "access_level": "List",
-    "description": "Lists the devices",
+    "description": "Grants permission to list the devices",
     "service_name": "Amazon Cognito User Pools",
     "risk_category": [
       "DataAccess"
@@ -1181,7 +1190,7 @@
   "healthlake:ReadResource": {
     "access_level": "Read",
     "description": "Grants permission to read resource",
-    "service_name": "Amazon HealthLake",
+    "service_name": "AWS HealthLake",
     "risk_category": [
       "DataAccess"
     ]
@@ -1189,7 +1198,7 @@
   "healthlake:SearchWithGet": {
     "access_level": "Read",
     "description": "Grants permission to search resources with GET method",
-    "service_name": "Amazon HealthLake",
+    "service_name": "AWS HealthLake",
     "risk_category": [
       "DataAccess"
     ]
@@ -1197,7 +1206,7 @@
   "healthlake:SearchWithPost": {
     "access_level": "Read",
     "description": "Grants permission to search resources with POST method",
-    "service_name": "Amazon HealthLake",
+    "service_name": "AWS HealthLake",
     "risk_category": [
       "DataAccess"
     ]

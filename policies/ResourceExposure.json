@@ -46,6 +46,7 @@
         "ds:ShareDirectory",
         "ec2:CreateNetworkInterfacePermission",
         "ec2:DeleteNetworkInterfacePermission",
+        "ec2:DisableImageBlockPublicAccess",
         "ec2:ModifySnapshotAttribute",
         "ec2:ModifyVpcEndpointServicePermissions",
         "ec2:ResetSnapshotAttribute",
