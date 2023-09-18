@@ -17,6 +17,7 @@ CredentialExposure:
   - connect:GetFederationToken
   - connect:ListSecurityKeys
   - ec2:GetPasswordData
+  - ec2-instance-connect:SendSSHPublicKey
   - ecr-public:GetAuthorizationToken
   - ecr:GetAuthorizationToken
   - gamelift:GetComputeAuthToken
@@ -204,6 +205,7 @@ PrivEsc:
   Actions:
   - codestar:AssociateTeamMember
   - codestar:CreateProject
+  - ec2-instance-connect:SendSSHPublicKey
   - glue:UpdateDevEndpoint
   - iam:AddUserToGroup
   - iam:AttachGroupPolicy
@@ -223,6 +225,7 @@ PrivEsc:
   - iam:SetDefaultPolicyVersion
   - iam:UpdateAssumeRolePolicy
   - iam:UpdateLoginProfile
+
 ResourceExposure:
   Actions:
   - acm-pca:CreatePermission
