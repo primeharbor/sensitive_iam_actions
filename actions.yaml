@@ -217,10 +217,14 @@ PrivEsc:
   - iam:CreatePolicyVersion
   - iam:CreateServiceLinkedRole
   - iam:CreateVirtualMFADevice
+  - iam:DeleteRolePermissionsBoundary
+  - iam:DeleteUserPermissionsBoundary
   - iam:EnableMFADevice
   - iam:PassRole
   - iam:PutGroupPolicy
+  - iam:PutRolePermissionsBoundary
   - iam:PutRolePolicy
+  - iam:PutUserPermissionsBoundary
   - iam:PutUserPolicy
   - iam:ResyncMFADevice
   - iam:SetDefaultPolicyVersion
