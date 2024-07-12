@@ -557,7 +557,7 @@ DataAccess:
 
   - cloudtrail:LookupEvents:
       access_level: Read
-      description: Grants permission to look up API activity events captured by CloudTrail that create, update, or delete resources in your account
+      description: Grants permission to look up and retrieve metric data for API activity events captured by CloudTrail that create, update, or delete resources in your account
       risk_category:
       - DataAccess
       service_name: AWS CloudTrail
@@ -599,7 +599,7 @@ DataAccess:
 
   - codecommit:BatchGetCommits:
       access_level: Read
-      description: Grants permission to get return information about one or more commits in an AWS CodeCommit repository
+      description: Grants permission to return information about one or more commits in an AWS CodeCommit repository
       risk_category:
       - DataAccess
       service_name: AWS CodeCommit
@@ -1354,6 +1354,13 @@ DataAccess:
       - DataAccess
       service_name: AWS Support
 
+  - wafv2:GetSampledRequests:
+      access_level: Read
+      description: Grants permission to retrieve detailed information about a sampling of web requests
+      risk_category:
+      - DataAccess
+      service_name: AWS WAF V2
+
   - workdocs:GetDocument:
       access_level: Read
       description: Grants permission to retrieve the specified document object
@@ -1864,6 +1871,13 @@ ResourceExposure:
   - ec2:DeleteNetworkInterfacePermission:
       access_level: Permissions management
       description: Grants permission to delete a permission that is associated with a network interface
+      risk_category:
+      - ResourceExposure
+      service_name: Amazon EC2
+
+  - ec2:DisableImageBlockPublicAccess:
+      access_level: Write
+      description: Grants permission to disable block public access for AMIs at the account level in the specified AWS Region
       risk_category:
       - ResourceExposure
       service_name: Amazon EC2
@@ -3647,13 +3661,6 @@ ResourceExposure:
   - workmail:ResetPassword:
       access_level: Write
       description: Grants permission to allow the administrator to reset the password for a user
-      risk_category:
-      - ResourceExposure
-      service_name: Amazon WorkMail
-
-  - workmail:ResetUserPassword:
-      access_level: Write
-      description: Grants permission to reset the password for a user's account
       risk_category:
       - ResourceExposure
       service_name: Amazon WorkMail
