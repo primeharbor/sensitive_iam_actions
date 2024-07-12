@@ -1676,6 +1676,24 @@
       "ResourceExposure"
     ]
   },
+  "iam:DeleteRolePermissionsBoundary": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to remove the permissions boundary from a role",
+    "service_name": "AWS Identity and Access Management (IAM)",
+    "risk_category": [
+      "PrivEsc",
+      "ResourceExposure"
+    ]
+  },
+  "iam:DeleteUserPermissionsBoundary": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to remove the permissions boundary from the specified IAM user",
+    "service_name": "AWS Identity and Access Management (IAM)",
+    "risk_category": [
+      "PrivEsc",
+      "ResourceExposure"
+    ]
+  },
   "iam:EnableMFADevice": {
     "access_level": "Write",
     "description": "Grants permission to enable an MFA device and associate it with the specified IAM user",
@@ -1703,9 +1721,27 @@
       "ResourceExposure"
     ]
   },
+  "iam:PutRolePermissionsBoundary": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to set a managed policy as a permissions boundary for a role",
+    "service_name": "AWS Identity and Access Management (IAM)",
+    "risk_category": [
+      "PrivEsc",
+      "ResourceExposure"
+    ]
+  },
   "iam:PutRolePolicy": {
     "access_level": "Permissions management",
     "description": "Grants permission to create or update an inline policy document that is embedded in the specified IAM role",
+    "service_name": "AWS Identity and Access Management (IAM)",
+    "risk_category": [
+      "PrivEsc",
+      "ResourceExposure"
+    ]
+  },
+  "iam:PutUserPermissionsBoundary": {
+    "access_level": "Permissions management",
+    "description": "Grants permission to set a managed policy as a permissions boundary for an IAM user",
     "service_name": "AWS Identity and Access Management (IAM)",
     "risk_category": [
       "PrivEsc",
@@ -2429,14 +2465,6 @@
       "ResourceExposure"
     ]
   },
-  "iam:DeleteRolePermissionsBoundary": {
-    "access_level": "Permissions management",
-    "description": "Grants permission to remove the permissions boundary from a role",
-    "service_name": "AWS Identity and Access Management (IAM)",
-    "risk_category": [
-      "ResourceExposure"
-    ]
-  },
   "iam:DeleteRolePolicy": {
     "access_level": "Permissions management",
     "description": "Grants permission to delete the specified inline policy from the specified role",
@@ -2501,14 +2529,6 @@
       "ResourceExposure"
     ]
   },
-  "iam:DeleteUserPermissionsBoundary": {
-    "access_level": "Permissions management",
-    "description": "Grants permission to remove the permissions boundary from the specified IAM user",
-    "service_name": "AWS Identity and Access Management (IAM)",
-    "risk_category": [
-      "ResourceExposure"
-    ]
-  },
   "iam:DeleteUserPolicy": {
     "access_level": "Permissions management",
     "description": "Grants permission to delete the specified inline policy from an IAM user",
@@ -2544,22 +2564,6 @@
   "iam:DetachUserPolicy": {
     "access_level": "Permissions management",
     "description": "Grants permission to detach a managed policy from the specified IAM user",
-    "service_name": "AWS Identity and Access Management (IAM)",
-    "risk_category": [
-      "ResourceExposure"
-    ]
-  },
-  "iam:PutRolePermissionsBoundary": {
-    "access_level": "Permissions management",
-    "description": "Grants permission to set a managed policy as a permissions boundary for a role",
-    "service_name": "AWS Identity and Access Management (IAM)",
-    "risk_category": [
-      "ResourceExposure"
-    ]
-  },
-  "iam:PutUserPermissionsBoundary": {
-    "access_level": "Permissions management",
-    "description": "Grants permission to set a managed policy as a permissions boundary for an IAM user",
     "service_name": "AWS Identity and Access Management (IAM)",
     "risk_category": [
       "ResourceExposure"

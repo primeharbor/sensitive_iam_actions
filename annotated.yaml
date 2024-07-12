@@ -1511,6 +1511,22 @@ PrivEsc:
       - ResourceExposure
       service_name: AWS Identity and Access Management (IAM)
 
+  - iam:DeleteRolePermissionsBoundary:
+      access_level: Permissions management
+      description: Grants permission to remove the permissions boundary from a role
+      risk_category:
+      - PrivEsc
+      - ResourceExposure
+      service_name: AWS Identity and Access Management (IAM)
+
+  - iam:DeleteUserPermissionsBoundary:
+      access_level: Permissions management
+      description: Grants permission to remove the permissions boundary from the specified IAM user
+      risk_category:
+      - PrivEsc
+      - ResourceExposure
+      service_name: AWS Identity and Access Management (IAM)
+
   - iam:EnableMFADevice:
       access_level: Write
       description: Grants permission to enable an MFA device and associate it with the specified IAM user
@@ -1535,9 +1551,25 @@ PrivEsc:
       - ResourceExposure
       service_name: AWS Identity and Access Management (IAM)
 
+  - iam:PutRolePermissionsBoundary:
+      access_level: Permissions management
+      description: Grants permission to set a managed policy as a permissions boundary for a role
+      risk_category:
+      - PrivEsc
+      - ResourceExposure
+      service_name: AWS Identity and Access Management (IAM)
+
   - iam:PutRolePolicy:
       access_level: Permissions management
       description: Grants permission to create or update an inline policy document that is embedded in the specified IAM role
+      risk_category:
+      - PrivEsc
+      - ResourceExposure
+      service_name: AWS Identity and Access Management (IAM)
+
+  - iam:PutUserPermissionsBoundary:
+      access_level: Permissions management
+      description: Grants permission to set a managed policy as a permissions boundary for an IAM user
       risk_category:
       - PrivEsc
       - ResourceExposure
@@ -2276,6 +2308,7 @@ ResourceExposure:
       access_level: Permissions management
       description: Grants permission to remove the permissions boundary from a role
       risk_category:
+      - PrivEsc
       - ResourceExposure
       service_name: AWS Identity and Access Management (IAM)
 
@@ -2339,6 +2372,7 @@ ResourceExposure:
       access_level: Permissions management
       description: Grants permission to remove the permissions boundary from the specified IAM user
       risk_category:
+      - PrivEsc
       - ResourceExposure
       service_name: AWS Identity and Access Management (IAM)
 
@@ -2405,6 +2439,7 @@ ResourceExposure:
       access_level: Permissions management
       description: Grants permission to set a managed policy as a permissions boundary for a role
       risk_category:
+      - PrivEsc
       - ResourceExposure
       service_name: AWS Identity and Access Management (IAM)
 
@@ -2420,6 +2455,7 @@ ResourceExposure:
       access_level: Permissions management
       description: Grants permission to set a managed policy as a permissions boundary for an IAM user
       risk_category:
+      - PrivEsc
       - ResourceExposure
       service_name: AWS Identity and Access Management (IAM)
 
