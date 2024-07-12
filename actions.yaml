@@ -194,6 +194,7 @@ DataAccess:
   - sso:SearchUsers
   - support:DescribeAttachment
   - support:DescribeCommunications
+  - wafv2:GetSampledRequests
   - workdocs:GetDocument
   - workdocs:GetDocumentPath
   - workdocs:GetDocumentVersion
