@@ -158,6 +158,7 @@ DataAccess:
   - kinesis:GetRecords
   - kinesisvideo:GetImages
   - kinesisvideo:GetMedia
+  - kms:CreateGrant
   - lambda:GetFunction
   - lambda:GetLayerVersion
   - lightsail:GetContainerImages
@@ -230,6 +231,7 @@ PrivEsc:
   - iam:SetDefaultPolicyVersion
   - iam:UpdateAssumeRolePolicy
   - iam:UpdateLoginProfile
+  - kms:CreateGrant
 
 ResourceExposure:
   Actions:
