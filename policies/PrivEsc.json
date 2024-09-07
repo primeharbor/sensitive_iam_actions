@@ -30,7 +30,8 @@
         "iam:ResyncMFADevice",
         "iam:SetDefaultPolicyVersion",
         "iam:UpdateAssumeRolePolicy",
-        "iam:UpdateLoginProfile"
+        "iam:UpdateLoginProfile",
+        "kms:CreateGrant"
       ],
       "Resource": "*"
     }

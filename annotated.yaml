@@ -1102,6 +1102,15 @@ DataAccess:
       - DataAccess
       service_name: Amazon Kinesis Video Streams
 
+  - kms:CreateGrant:
+      access_level: Permissions management
+      description: Controls permission to add a grant to an AWS KMS key. You can use grants to add permissions without changing the key policy or IAM policy
+      risk_category:
+      - DataAccess
+      - PrivEsc
+      - ResourceExposure
+      service_name: AWS Key Management Service
+
   - lambda:GetFunction:
       access_level: Read
       description: Grants permission to view details about an AWS Lambda function
@@ -1614,6 +1623,15 @@ PrivEsc:
       - PrivEsc
       - ResourceExposure
       service_name: AWS Identity and Access Management (IAM)
+
+  - kms:CreateGrant:
+      access_level: Permissions management
+      description: Controls permission to add a grant to an AWS KMS key. You can use grants to add permissions without changing the key policy or IAM policy
+      risk_category:
+      - DataAccess
+      - PrivEsc
+      - ResourceExposure
+      service_name: AWS Key Management Service
 
 ResourceExposure:
   Actions:
@@ -2729,6 +2747,8 @@ ResourceExposure:
       access_level: Permissions management
       description: Controls permission to add a grant to an AWS KMS key. You can use grants to add permissions without changing the key policy or IAM policy
       risk_category:
+      - DataAccess
+      - PrivEsc
       - ResourceExposure
       service_name: AWS Key Management Service
 

@@ -30,7 +30,8 @@
         "iam:ResyncMFADevice",
         "iam:SetDefaultPolicyVersion",
         "iam:UpdateAssumeRolePolicy",
-        "iam:UpdateLoginProfile"
+        "iam:UpdateLoginProfile",
+        "kms:CreateGrant"
       ],
       "Resource": "*"
     },
@@ -502,6 +503,7 @@
         "kinesis:GetRecords",
         "kinesisvideo:GetImages",
         "kinesisvideo:GetMedia",
+        "kms:CreateGrant",
         "lambda:GetFunction",
         "lambda:GetLayerVersion",
         "lightsail:GetContainerImages",

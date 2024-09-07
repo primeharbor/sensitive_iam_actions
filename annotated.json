@@ -1243,6 +1243,16 @@
       "DataAccess"
     ]
   },
+  "kms:CreateGrant": {
+    "access_level": "Permissions management",
+    "description": "Controls permission to add a grant to an AWS KMS key. You can use grants to add permissions without changing the key policy or IAM policy",
+    "service_name": "AWS Key Management Service",
+    "risk_category": [
+      "DataAccess",
+      "PrivEsc",
+      "ResourceExposure"
+    ]
+  },
   "lambda:GetFunction": {
     "access_level": "Read",
     "description": "Grants permission to view details about an AWS Lambda function",
@@ -2805,14 +2815,6 @@
     "access_level": "Write",
     "description": "Grants permission to update an access policy",
     "service_name": "AWS IoT SiteWise",
-    "risk_category": [
-      "ResourceExposure"
-    ]
-  },
-  "kms:CreateGrant": {
-    "access_level": "Permissions management",
-    "description": "Controls permission to add a grant to an AWS KMS key. You can use grants to add permissions without changing the key policy or IAM policy",
-    "service_name": "AWS Key Management Service",
     "risk_category": [
       "ResourceExposure"
     ]

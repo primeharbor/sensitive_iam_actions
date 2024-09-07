@@ -112,6 +112,7 @@
         "kinesis:GetRecords",
         "kinesisvideo:GetImages",
         "kinesisvideo:GetMedia",
+        "kms:CreateGrant",
         "lambda:GetFunction",
         "lambda:GetLayerVersion",
         "lightsail:GetContainerImages",
