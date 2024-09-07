@@ -23,6 +23,16 @@ The addition of an action to these lists can be subjective. Is a pull request in
 
 The script [policy-generation.py](scripts/policy-generation.py) allows you to customize your policies to an extent. If there are specific actions you want to exclude from the explicit deny, you can specify them using `--exclude-actions`. If there are a handful of resource ARNs that you need to access, say a specific S3 Bucket, you can use the `--exclude-resources` flag, and they will be added to the policy using a `NotResource` field.
 
+First, install the script's dependencies. A [Python venv](https://docs.python.org/3/library/venv.html) is an easy way:
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
+
+Then you can run the script:
+
 ```bash
 usage: policy-generation.py [-h] [--debug] --risk {PrivEsc,ResourceExposure,CredentialExposure,DataAccess,ALL}
                             [--exclude-resources EXCLUDE_RESOURCES [EXCLUDE_RESOURCES ...]]
