@@ -279,6 +279,13 @@ CredentialExposure:
       - CredentialExposure
       service_name: Amazon Redshift
 
+  - s3:GetDataAccess:
+      access_level: Read
+      description: Grants permission to get Access
+      risk_category:
+      - CredentialExposure
+      service_name: Amazon S3
+
   - snowball:GetJobUnlockCode:
       access_level: Read
       description: Grants permission to get the UnlockCode code value for the specified job
@@ -291,7 +298,7 @@ CredentialExposure:
       description: Grants permission to list bearer tokens for a given provisioning tenant
       risk_category:
       - CredentialExposure
-      service_name: AWS IAM Identity Center (successor to AWS Single Sign-On) directory
+      service_name: AWS IAM Identity Center Directory
 
   - storagegateway:DescribeChapCredentials:
       access_level: Read
@@ -1312,42 +1319,42 @@ DataAccess:
       description: Grants permission to query the group data, not including user and group members
       risk_category:
       - DataAccess
-      service_name: AWS IAM Identity Center (successor to AWS Single Sign-On) directory
+      service_name: AWS IAM Identity Center Directory
 
   - sso-directory:DescribeUser:
       access_level: Read
       description: Grants permission to retrieve information about a user from the directory that AWS IAM Identity Center provides by default
       risk_category:
       - DataAccess
-      service_name: AWS IAM Identity Center (successor to AWS Single Sign-On) directory
+      service_name: AWS IAM Identity Center Directory
 
   - sso-directory:SearchGroups:
       access_level: Read
       description: Grants permission to search for groups within the associated directory
       risk_category:
       - DataAccess
-      service_name: AWS IAM Identity Center (successor to AWS Single Sign-On) directory
+      service_name: AWS IAM Identity Center Directory
 
   - sso-directory:SearchUsers:
       access_level: Read
       description: Grants permission to search for users within the associated directory
       risk_category:
       - DataAccess
-      service_name: AWS IAM Identity Center (successor to AWS Single Sign-On) directory
+      service_name: AWS IAM Identity Center Directory
 
   - sso:SearchGroups:
       access_level: Read
       description: Grants permission to search for groups within the associated directory
       risk_category:
       - DataAccess
-      service_name: AWS IAM Identity Center (successor to AWS Single Sign-On)
+      service_name: AWS IAM Identity Center
 
   - sso:SearchUsers:
       access_level: Read
       description: Grants permission to search for users within the associated directory
       risk_category:
       - DataAccess
-      service_name: AWS IAM Identity Center (successor to AWS Single Sign-On)
+      service_name: AWS IAM Identity Center
 
   - support:DescribeAttachment:
       access_level: Read
@@ -3327,294 +3334,294 @@ ResourceExposure:
       description: Grants permission to add a member to a group in the directory that AWS IAM Identity Center provides by default
       risk_category:
       - ResourceExposure
-      service_name: AWS IAM Identity Center (successor to AWS Single Sign-On) directory
+      service_name: AWS IAM Identity Center Directory
 
   - sso-directory:CreateAlias:
       access_level: Write
       description: Grants permission to create an alias for the directory that AWS IAM Identity Center provides by default
       risk_category:
       - ResourceExposure
-      service_name: AWS IAM Identity Center (successor to AWS Single Sign-On) directory
+      service_name: AWS IAM Identity Center Directory
 
   - sso-directory:CreateGroup:
       access_level: Write
       description: Grants permission to create a group in the directory that AWS IAM Identity Center provides by default
       risk_category:
       - ResourceExposure
-      service_name: AWS IAM Identity Center (successor to AWS Single Sign-On) directory
+      service_name: AWS IAM Identity Center Directory
 
   - sso-directory:CreateUser:
       access_level: Write
       description: Grants permission to create a user in the directory that AWS IAM Identity Center provides by default
       risk_category:
       - ResourceExposure
-      service_name: AWS IAM Identity Center (successor to AWS Single Sign-On) directory
+      service_name: AWS IAM Identity Center Directory
 
   - sso-directory:DeleteGroup:
       access_level: Write
       description: Grants permission to delete a group from the directory that AWS IAM Identity Center provides by default
       risk_category:
       - ResourceExposure
-      service_name: AWS IAM Identity Center (successor to AWS Single Sign-On) directory
+      service_name: AWS IAM Identity Center Directory
 
   - sso-directory:DeleteUser:
       access_level: Write
       description: Grants permission to delete a user from the directory that AWS IAM Identity Center provides by default
       risk_category:
       - ResourceExposure
-      service_name: AWS IAM Identity Center (successor to AWS Single Sign-On) directory
+      service_name: AWS IAM Identity Center Directory
 
   - sso-directory:DisableUser:
       access_level: Write
       description: Grants permission to deactivate a user in the directory that AWS IAM Identity Center provides by default
       risk_category:
       - ResourceExposure
-      service_name: AWS IAM Identity Center (successor to AWS Single Sign-On) directory
+      service_name: AWS IAM Identity Center Directory
 
   - sso-directory:EnableUser:
       access_level: Write
       description: Grants permission to activate user in the directory that AWS IAM Identity Center provides by default
       risk_category:
       - ResourceExposure
-      service_name: AWS IAM Identity Center (successor to AWS Single Sign-On) directory
+      service_name: AWS IAM Identity Center Directory
 
   - sso-directory:RemoveMemberFromGroup:
       access_level: Write
       description: Grants permission to remove a member that is part of a group in the directory that AWS IAM Identity Center provides by default
       risk_category:
       - ResourceExposure
-      service_name: AWS IAM Identity Center (successor to AWS Single Sign-On) directory
+      service_name: AWS IAM Identity Center Directory
 
   - sso-directory:UpdateGroup:
       access_level: Write
       description: Grants permission to update information about a group in the directory that AWS IAM Identity Center provides by default
       risk_category:
       - ResourceExposure
-      service_name: AWS IAM Identity Center (successor to AWS Single Sign-On) directory
+      service_name: AWS IAM Identity Center Directory
 
   - sso-directory:UpdatePassword:
       access_level: Write
       description: Grants permission to update a password by sending password reset link via email or generating one time password for a user in the directory that AWS IAM Identity Center provides by default
       risk_category:
       - ResourceExposure
-      service_name: AWS IAM Identity Center (successor to AWS Single Sign-On) directory
+      service_name: AWS IAM Identity Center Directory
 
   - sso-directory:UpdateUser:
       access_level: Write
       description: Grants permission to update user information in the directory that AWS IAM Identity Center provides by default
       risk_category:
       - ResourceExposure
-      service_name: AWS IAM Identity Center (successor to AWS Single Sign-On) directory
+      service_name: AWS IAM Identity Center Directory
 
   - sso-directory:VerifyEmail:
       access_level: Write
       description: Grants permission to verify an email address of an User
       risk_category:
       - ResourceExposure
-      service_name: AWS IAM Identity Center (successor to AWS Single Sign-On) directory
+      service_name: AWS IAM Identity Center Directory
 
   - sso:AssociateDirectory:
       access_level: Write
       description: Grants permission to connect a directory to be used by AWS IAM Identity Center
       risk_category:
       - ResourceExposure
-      service_name: AWS IAM Identity Center (successor to AWS Single Sign-On)
+      service_name: AWS IAM Identity Center
 
   - sso:AssociateProfile:
       access_level: Write
       description: Grants permission to create an association between a directory user or group and a profile
       risk_category:
       - ResourceExposure
-      service_name: AWS IAM Identity Center (successor to AWS Single Sign-On)
+      service_name: AWS IAM Identity Center
 
   - sso:CreateApplicationInstance:
       access_level: Write
       description: Grants permission to add an application instance to AWS IAM Identity Center
       risk_category:
       - ResourceExposure
-      service_name: AWS IAM Identity Center (successor to AWS Single Sign-On)
+      service_name: AWS IAM Identity Center
 
   - sso:CreateApplicationInstanceCertificate:
       access_level: Write
       description: Grants permission to add a new certificate for an application instance
       risk_category:
       - ResourceExposure
-      service_name: AWS IAM Identity Center (successor to AWS Single Sign-On)
+      service_name: AWS IAM Identity Center
 
   - sso:CreatePermissionSet:
       access_level: Write
       description: Grants permission to create a permission set
       risk_category:
       - ResourceExposure
-      service_name: AWS IAM Identity Center (successor to AWS Single Sign-On)
+      service_name: AWS IAM Identity Center
 
   - sso:CreateProfile:
       access_level: Write
       description: Grants permission to create a profile for an application instance
       risk_category:
       - ResourceExposure
-      service_name: AWS IAM Identity Center (successor to AWS Single Sign-On)
+      service_name: AWS IAM Identity Center
 
   - sso:CreateTrust:
       access_level: Write
       description: Grants permission to create a federation trust in a target account
       risk_category:
       - ResourceExposure
-      service_name: AWS IAM Identity Center (successor to AWS Single Sign-On)
+      service_name: AWS IAM Identity Center
 
   - sso:DeleteApplicationInstance:
       access_level: Write
       description: Grants permission to delete the application instance
       risk_category:
       - ResourceExposure
-      service_name: AWS IAM Identity Center (successor to AWS Single Sign-On)
+      service_name: AWS IAM Identity Center
 
   - sso:DeleteApplicationInstanceCertificate:
       access_level: Write
       description: Grants permission to delete an inactive or expired certificate from the application instance
       risk_category:
       - ResourceExposure
-      service_name: AWS IAM Identity Center (successor to AWS Single Sign-On)
+      service_name: AWS IAM Identity Center
 
   - sso:DeletePermissionSet:
       access_level: Write
       description: Grants permission to delete a permission set
       risk_category:
       - ResourceExposure
-      service_name: AWS IAM Identity Center (successor to AWS Single Sign-On)
+      service_name: AWS IAM Identity Center
 
   - sso:DeletePermissionsPolicy:
       access_level: Permissions management
       description: Grants permission to delete the permission policy associated with a permission set
       risk_category:
       - ResourceExposure
-      service_name: AWS IAM Identity Center (successor to AWS Single Sign-On)
+      service_name: AWS IAM Identity Center
 
   - sso:DeleteProfile:
       access_level: Write
       description: Grants permission to delete the profile for an application instance
       risk_category:
       - ResourceExposure
-      service_name: AWS IAM Identity Center (successor to AWS Single Sign-On)
+      service_name: AWS IAM Identity Center
 
   - sso:DisassociateDirectory:
       access_level: Write
       description: Grants permission to disassociate a directory to be used by AWS IAM Identity Center
       risk_category:
       - ResourceExposure
-      service_name: AWS IAM Identity Center (successor to AWS Single Sign-On)
+      service_name: AWS IAM Identity Center
 
   - sso:DisassociateProfile:
       access_level: Write
       description: Grants permission to disassociate a directory user or group from a profile
       risk_category:
       - ResourceExposure
-      service_name: AWS IAM Identity Center (successor to AWS Single Sign-On)
+      service_name: AWS IAM Identity Center
 
   - sso:ImportApplicationInstanceServiceProviderMetadata:
       access_level: Write
       description: Grants permission to update the application instance by uploading an application SAML metadata file provided by the service provider
       risk_category:
       - ResourceExposure
-      service_name: AWS IAM Identity Center (successor to AWS Single Sign-On)
+      service_name: AWS IAM Identity Center
 
   - sso:PutPermissionsPolicy:
       access_level: Permissions management
       description: Grants permission to add a policy to a permission set
       risk_category:
       - ResourceExposure
-      service_name: AWS IAM Identity Center (successor to AWS Single Sign-On)
+      service_name: AWS IAM Identity Center
 
   - sso:StartSSO:
       access_level: Write
       description: Grants permission to initialize AWS IAM Identity Center
       risk_category:
       - ResourceExposure
-      service_name: AWS IAM Identity Center (successor to AWS Single Sign-On)
+      service_name: AWS IAM Identity Center
 
   - sso:UpdateApplicationInstanceActiveCertificate:
       access_level: Write
       description: Grants permission to set a certificate as the active one for this application instance
       risk_category:
       - ResourceExposure
-      service_name: AWS IAM Identity Center (successor to AWS Single Sign-On)
+      service_name: AWS IAM Identity Center
 
   - sso:UpdateApplicationInstanceDisplayData:
       access_level: Write
       description: Grants permission to update display data of an application instance
       risk_category:
       - ResourceExposure
-      service_name: AWS IAM Identity Center (successor to AWS Single Sign-On)
+      service_name: AWS IAM Identity Center
 
   - sso:UpdateApplicationInstanceResponseConfiguration:
       access_level: Write
       description: Grants permission to update federation response configuration for the application instance
       risk_category:
       - ResourceExposure
-      service_name: AWS IAM Identity Center (successor to AWS Single Sign-On)
+      service_name: AWS IAM Identity Center
 
   - sso:UpdateApplicationInstanceResponseSchemaConfiguration:
       access_level: Write
       description: Grants permission to update federation response schema configuration for the application instance
       risk_category:
       - ResourceExposure
-      service_name: AWS IAM Identity Center (successor to AWS Single Sign-On)
+      service_name: AWS IAM Identity Center
 
   - sso:UpdateApplicationInstanceSecurityConfiguration:
       access_level: Write
       description: Grants permission to update security details for the application instance
       risk_category:
       - ResourceExposure
-      service_name: AWS IAM Identity Center (successor to AWS Single Sign-On)
+      service_name: AWS IAM Identity Center
 
   - sso:UpdateApplicationInstanceServiceProviderConfiguration:
       access_level: Write
       description: Grants permission to update service provider related configuration for the application instance
       risk_category:
       - ResourceExposure
-      service_name: AWS IAM Identity Center (successor to AWS Single Sign-On)
+      service_name: AWS IAM Identity Center
 
   - sso:UpdateApplicationInstanceStatus:
       access_level: Write
       description: Grants permission to update the status of an application instance
       risk_category:
       - ResourceExposure
-      service_name: AWS IAM Identity Center (successor to AWS Single Sign-On)
+      service_name: AWS IAM Identity Center
 
   - sso:UpdateDirectoryAssociation:
       access_level: Write
       description: Grants permission to update the user attribute mappings for your connected directory
       risk_category:
       - ResourceExposure
-      service_name: AWS IAM Identity Center (successor to AWS Single Sign-On)
+      service_name: AWS IAM Identity Center
 
   - sso:UpdatePermissionSet:
       access_level: Permissions management
       description: Grants permission to update the permission set
       risk_category:
       - ResourceExposure
-      service_name: AWS IAM Identity Center (successor to AWS Single Sign-On)
+      service_name: AWS IAM Identity Center
 
   - sso:UpdateProfile:
       access_level: Write
       description: Grants permission to update the profile for an application instance
       risk_category:
       - ResourceExposure
-      service_name: AWS IAM Identity Center (successor to AWS Single Sign-On)
+      service_name: AWS IAM Identity Center
 
   - sso:UpdateSSOConfiguration:
       access_level: Write
       description: Grants permission to update the configuration for the current SSO instance
       risk_category:
       - ResourceExposure
-      service_name: AWS IAM Identity Center (successor to AWS Single Sign-On)
+      service_name: AWS IAM Identity Center
 
   - sso:UpdateTrust:
       access_level: Write
       description: Grants permission to update the federation trust in a target account
       risk_category:
       - ResourceExposure
-      service_name: AWS IAM Identity Center (successor to AWS Single Sign-On)
+      service_name: AWS IAM Identity Center
 
   - storagegateway:DeleteChapCredentials:
       access_level: Write

@@ -379,6 +379,7 @@
         "mediapackage:RotateIngestEndpointCredentials",
         "rds-db:connect",
         "redshift:GetClusterCredentials",
+        "s3:GetDataAccess",
         "snowball:GetJobUnlockCode",
         "sso-directory:ListBearerTokens",
         "storagegateway:DescribeChapCredentials",
